@@ -1,0 +1,145 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { board } from "../data/site";
+import { img } from "../lib/images";
+
+const boardJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: board.map((m, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: { "@type": "Person", name: m.name, jobTitle: m.role },
+  })),
+};
+
+const timeline = [
+  { year: "1990–95", text: "UNNATI played the role of a capacity-building support institution in participatory planning, evaluation and organisational management." },
+  { year: "1995–2000", text: "A proactive role in development education on rising communalism, drought management and the adverse impact of liberalisation. UNNATI joined the Network of Collaborating Regional Support Organisations (NCRSOs) coordinated by PRIA." },
+  { year: "1999", text: "A formal review with three external evaluators to identify strategic issues and re-craft the strategy." },
+  { year: "2001–05", text: "Relief and rehabilitation work after the 2001 Gujarat earthquake and 2002 communal riots." },
+  { year: "2006", text: "An internal strategic review shapes UNNATI's three programme centres." },
+  { year: "Today", text: "35 years of educational support in Gujarat and 26 years in Rajasthan across the three programme centres." },
+];
+
+const vms = [
+  {
+    num: "01",
+    icon: "◎",
+    kicker: "Where we are headed",
+    title: "Vision",
+    image: "/images/vision.jpg",
+    alt: "Village assembly",
+    body: "Towards building an inclusive and democratic society.",
+  },
+  {
+    num: "02",
+    icon: "✦",
+    kicker: "What we are here to do",
+    title: "Mission",
+    image: "/images/mission.jpg",
+    alt: "Women farmers",
+    body: "To promote social inclusion and democratic governance so that dalits, tribals, women and persons with disabilities are empowered to participate in development and decision-making.",
+  },
+  {
+    num: "03",
+    icon: "▲",
+    kicker: "How we work",
+    title: "Strategy",
+    image: "/images/strategy.jpg",
+    alt: "Thar desert commons",
+    body: "An issue-based, strategic educational support organisation working in Western India with people's collectives, NGOs, elected representatives in local governance and the government. Collaborative research, public education, advocacy, direct field-level mobilisation and implementation with multiple stakeholders are the key instruments of our work — spanning from the grassroots to the policy level in ensuring the basic rights of citizens.",
+  },
+];
+---
+
+<Layout title="About Us · UNNATI" description="Vision, mission and 35 years of UNNATI's work for social inclusion and democratic governance.">
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(boardJsonLd)} />
+  <section class="relative overflow-hidden bg-inkdark">
+    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(229,142,38,0.14), transparent 46%), radial-gradient(circle at 4% 100%, rgba(229,142,38,0.1), transparent 40%);"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-5 py-12">
+      <div class="kicker mb-4 text-saffron-300">About Us</div>
+      <h1 class="max-w-3xl text-4xl font-bold text-white sm:text-5xl">Three decades enabling participation.</h1>
+      <p class="mt-5 max-w-2xl text-lg text-zinc-300">
+        UNNATI is a voluntary non-profit promoting social inclusion and democratic governance so the vulnerable
+        participate decisively in mainstream development.
+      </p>
+    </div>
+  </section>
+
+  <!-- Vision / Mission / Strategy -->
+  <section class="mx-auto w-full max-w-6xl px-5 py-12">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+      {vms.map((v) => (
+        <article class="card card-hover flex flex-col overflow-hidden bg-charcoal text-white">
+          <div class="relative h-48 overflow-hidden">
+            <Image
+              src={img(v.image)}
+              alt={v.alt}
+              class="media-fade absolute inset-0 h-full w-full object-cover object-top"
+              widths={[400, 640, 960]}
+              sizes="(min-width: 768px) 33vw, 92vw"
+              format="webp"
+              loading="lazy"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/30 to-transparent"></div>
+            <span class="absolute left-3 top-3 rounded-full bg-saffron-500 px-2.5 py-1 text-xs font-extrabold tracking-widest text-charcoal">{v.num}</span>
+            <span class="absolute right-3 top-2 text-xl text-white/90">{v.icon}</span>
+            <span class="absolute bottom-3 left-4 text-[0.7rem] font-bold uppercase tracking-[0.14em] text-saffron-300">{v.kicker}</span>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <h3 class="mb-3 text-xl text-white">{v.title}</h3>
+            <div class="mb-3 h-0.5 w-10 rounded bg-saffron-500"></div>
+            <p class="mb-0 text-sm text-zinc-300">{v.body}</p>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- History timeline -->
+  <section class="bg-saffron-50/70">
+    <div class="mx-auto w-full max-w-6xl px-5 py-12">
+      <div class="kicker mb-3">Our Journey</div>
+      <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">History</h2>
+      <div class="mt-8 space-y-4">
+        {timeline.map((t) => (
+          <div class="grid grid-cols-1 gap-2 rounded-2xl border-l-4 border-saffron-500 bg-white p-5 shadow-card ring-1 ring-line sm:grid-cols-[130px_1fr] sm:gap-4">
+            <div class="text-lg font-bold text-saffron-600">{t.year}</div>
+            <p class="mb-0 text-charcoal">{t.text}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Board -->
+  <section class="mx-auto w-full max-w-6xl px-5 py-12">
+    <div class="max-w-2xl">
+      <div class="kicker mb-3">Leadership</div>
+      <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">Board Members</h2>
+      <p class="mt-2 text-muted">Guiding UNNATI's governance and direction.</p>
+    </div>
+    <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      {board.map((m) => (
+        <div class="text-center">
+          <div class="mx-auto mb-4 aspect-square w-full max-w-[180px] overflow-hidden rounded-full ring-1 ring-line">
+            <Image
+              src={img(m.image)}
+              alt={m.name}
+              class="h-full w-full object-cover"
+              widths={[240, 360]}
+              sizes="180px"
+              format="webp"
+              loading="lazy"
+            />
+          </div>
+          <h4 class="mb-1 text-lg text-charcoal">{m.name}</h4>
+          <div class="text-sm font-bold text-saffron-600">{m.role}</div>
+          <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

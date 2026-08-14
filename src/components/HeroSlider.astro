@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+import { img } from "../lib/images";
+
+interface Slide {
+  image: string;
+  tag: string;
+  title: string;
+  sub?: string;
+  cta?: { label: string; href: string };
+}
+
+const { slides } = Astro.props as { slides: Slide[] };
+---
+
+<div class="hero-slider bg-paper" data-hero>
+  {slides.map((s, i) => (
+    <section class="flex overflow-hidden py-10 lg:py-14" data-slide={i}>
+      <div class="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+        <div class="max-w-xl">
+          <div class="badge-chip mb-6">
+            <span class="h-2 w-2 rounded-full bg-saffron-500"></span>
+            {s.tag}
+          </div>
+          {i === 0 ? (
+            <h1 class="mb-6 text-4xl font-bold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">{s.title}</h1>
+          ) : (
+            <h2 class="mb-6 text-4xl font-bold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">{s.title}</h2>
+          )}
+          {s.sub && <p class="mb-8 text-lg text-muted">{s.sub}</p>}
+          <div class="flex flex-wrap gap-3">
+            {s.cta && <a class="btn btn--primary btn--shine" href={s.cta.href}>{s.cta.label}</a>}
+            <a class="btn btn--secondary" href="/about">Our Story</a>
+          </div>
+        </div>
+
+        <div class="relative ml-auto w-full max-w-xl">
+          <div class="absolute -right-4 -top-4 h-[85%] w-[85%] rounded-3xl bg-saffron-100" aria-hidden="true"></div>
+          <Image
+            src={img(s.image)}
+            alt={s.title}
+            class="relative aspect-[4/3] w-full rounded-2xl object-cover object-top shadow-pop"
+            widths={[400, 640, 800, 1024]}
+            sizes="(min-width: 1024px) 46vw, 92vw"
+            format="webp"
+            loading={i === 0 ? "eager" : "lazy"}
+            fetchpriority={i === 0 ? "high" : "auto"}
+          />
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <div class="mx-auto flex w-full max-w-6xl justify-end px-5 pb-4">
+    <div class="flex gap-2">
+      {slides.map((_, i) => (
+        <button class={i === 0 ? "hero-dot active" : "hero-dot"} type="button" data-dot={i} aria-label={`Slide ${i + 1}`}></button>
+      ))}
+    </div>
+  </div>
+</div>
+
+<script>
+  const root = document.querySelector("[data-hero]");
+  if (root) {
+    const slidesArr = Array.from(root.querySelectorAll<HTMLElement>("[data-slide]"));
+    const dots = Array.from(root.querySelectorAll<HTMLButtonElement>("[data-dot]"));
+    let idx = 0;
+    let timer: number | undefined;
+    const show = (n: number) => {
+      idx = n;
+      slidesArr.forEach((el, i) => { (el as HTMLElement).style.display = i === idx ? "flex" : "none"; });
+      dots.forEach((d, i) => d.classList.toggle("active", i === idx));
+    };
+    dots.forEach((d, i) => d.addEventListener("click", () => { show(i); restart(); }));
+    const restart = () => {
+      window.clearInterval(timer);
+      timer = window.setInterval(() => show((idx + 1) % slidesArr.length), 6000);
+    };
+    show(0);
+    restart();
+  }
+</script>
