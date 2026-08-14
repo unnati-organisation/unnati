@@ -6,6 +6,7 @@ import { anchors } from "../data/anchors";
 import { projects } from "../data/projects";
 import { img } from "../lib/images";
 
+const base = import.meta.env.BASE_URL;
 const heroSlides = [
   {
     image: "/images/slide-climate.jpg",
@@ -118,7 +119,7 @@ const stats = [
           </li>
         </ul>
         <div class="mt-8 flex flex-wrap gap-3">
-          <a class="btn btn--primary btn--shine" href="/about">About UNNATI</a>
+          <a class="btn btn--primary btn--shine" href={`${base}about`}>About UNNATI</a>
         </div>
       </div>
     </div>
@@ -134,7 +135,7 @@ const stats = [
       </div>
       <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
         {anchors.map((a) => (
-          <a href={`/thematic-anchors/${a.slug}`} class="card card-hover group flex flex-col overflow-hidden">
+          <a href={`${base}thematic-anchors/${a.slug}`} class="card card-hover group flex flex-col overflow-hidden">
             <div class="relative aspect-[4/3] overflow-hidden bg-charcoal">
               <Image
                 src={img(a.image)}
@@ -168,7 +169,7 @@ const stats = [
     </div>
     <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
       {projects.slice(0, 2).map((p) => (
-        <a class="card card-hover group flex flex-col overflow-hidden" href={`/thematic-anchors/${p.tags[0]}`}>
+        <a class="card card-hover group flex flex-col overflow-hidden" href={`${base}thematic-anchors/${p.tags[0]}`}>
           <div class="relative aspect-[16/9] overflow-hidden bg-charcoal">
             <Image
               src={img(p.image)}

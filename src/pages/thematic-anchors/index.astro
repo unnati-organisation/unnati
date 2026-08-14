@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import { anchors } from "../../data/anchors";
 import { img } from "../../lib/images";
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Thematic Anchors · UNNATI" description="UNNATI works through three thematic anchors: social inclusion, civic governance, and disaster risk reduction.">
@@ -21,7 +22,7 @@ import { img } from "../../lib/images";
   <section class="mx-auto w-full max-w-6xl px-5 py-12">
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
       {anchors.map((a) => (
-        <a href={`/thematic-anchors/${a.slug}`} class="card card-hover group flex flex-col overflow-hidden">
+        <a href={`${base}thematic-anchors/${a.slug}`} class="card card-hover group flex flex-col overflow-hidden">
           <div class="relative aspect-[4/3] overflow-hidden bg-charcoal">
             <Image
               src={img(a.image)}

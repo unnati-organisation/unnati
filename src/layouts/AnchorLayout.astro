@@ -4,6 +4,7 @@ import Layout from "./Layout.astro";
 import { anchorBySlug, anchors } from "../data/anchors";
 import { projectsForAnchor, anchorName } from "../data/projects";
 import { img } from "../lib/images";
+const base = import.meta.env.BASE_URL;
 
 interface Props {
   slug: string;
@@ -43,7 +44,7 @@ const related = projectsForAnchor(slug);
     <nav class="flex flex-wrap gap-1.5 rounded-full border border-line bg-white p-1.5 shadow-card" aria-label="Thematic anchors">
       {anchors.map((a) => (
         <a
-          href={`/thematic-anchors/${a.slug}`}
+          href={`${base}thematic-anchors/${a.slug}`}
           class={a.slug === slug
             ? "rounded-full bg-charcoal px-4 py-2 text-sm font-semibold text-white transition duration-200 ease-in-out"
             : "rounded-full px-4 py-2 text-sm font-semibold text-muted transition duration-200 ease-in-out hover:bg-saffron-50 hover:text-charcoal"}
@@ -94,7 +95,7 @@ const related = projectsForAnchor(slug);
         <p class="mb-0 mt-2 max-w-2xl text-muted">Projects in this anchor — some also belong to other thematic anchors.</p>
         <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
           {related.map((p) => (
-            <a class="card card-hover flex flex-col overflow-hidden" href={`/thematic-anchors/${p.tags[0]}`}>
+            <a class="card card-hover flex flex-col overflow-hidden" href={`${base}thematic-anchors/${p.tags[0]}`}>
               <div class="relative aspect-[16/9] overflow-hidden bg-charcoal">
                 <Image
                   src={img(p.image)}

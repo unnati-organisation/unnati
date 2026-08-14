@@ -11,6 +11,7 @@ interface Slide {
 }
 
 const { slides } = Astro.props as { slides: Slide[] };
+const base = import.meta.env.BASE_URL;
 ---
 
 <div class="hero-slider bg-paper" data-hero>
@@ -29,8 +30,8 @@ const { slides } = Astro.props as { slides: Slide[] };
           )}
           {s.sub && <p class="mb-8 text-lg text-muted">{s.sub}</p>}
           <div class="flex flex-wrap gap-3">
-            {s.cta && <a class="btn btn--primary btn--shine" href={s.cta.href}>{s.cta.label}</a>}
-            <a class="btn btn--secondary" href="/about">Our Story</a>
+            {s.cta && <a class="btn btn--primary btn--shine" href={`${base}${s.cta.href.replace(/^\//, "")}`}>{s.cta.label}</a>}
+            <a class="btn btn--secondary" href={`${base}about`}>Our Story</a>
           </div>
         </div>
 
