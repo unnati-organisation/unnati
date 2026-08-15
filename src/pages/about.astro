@@ -121,23 +121,25 @@ const vms = [
       <h2 class="type-headline text-on-surface">Board Members</h2>
       <p class="mt-2 text-muted">Guiding UNNATI's governance and direction.</p>
     </div>
-    <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
       {board.map((m) => (
-        <div class="text-center">
-          <div class="mx-auto mb-4 aspect-square w-full max-w-[180px] overflow-hidden rounded-full ring-1 ring-outline-variant">
+        <div class="grid aspect-[3/5] grid-rows-[1fr_auto] overflow-hidden rounded-2xl bg-surface-container-low shadow-card ring-1 ring-outline-variant">
+          <div class="relative min-h-0 overflow-hidden">
             <Image
               src={img(m.image)}
               alt={m.name}
-              class="h-full w-full object-cover"
-              widths={[240, 360]}
-              sizes="180px"
+              class="absolute inset-0 h-full w-full object-cover"
+              widths={[360, 480, 720]}
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
               format="webp"
               loading="lazy"
             />
           </div>
-          <h4 class="mb-1 type-title text-on-surface">{m.name}</h4>
-          <div class="text-sm font-bold text-secondary-dark">{m.role}</div>
-          <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
+          <div class="p-5">
+            <h4 class="mb-1 type-title text-on-surface">{m.name}</h4>
+            <div class="text-sm font-bold text-secondary-dark">{m.role}</div>
+            <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
+          </div>
         </div>
       ))}
     </div>
