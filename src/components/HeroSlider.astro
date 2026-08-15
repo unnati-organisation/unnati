@@ -14,39 +14,38 @@ const { slides } = Astro.props as { slides: Slide[] };
 const base = import.meta.env.BASE_URL;
 ---
 
-<div class="hero-slider bg-paper" data-hero>
+<div class="hero-slider bg-surface" data-hero>
   {slides.map((s, i) => (
     <section class="flex overflow-hidden py-10 lg:py-14" data-slide={i}>
-      <div class="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
-        <div class="max-w-xl">
-          <div class="badge-chip mb-6">
-            <span class="h-2 w-2 rounded-full bg-saffron-500"></span>
-            {s.tag}
-          </div>
-          {i === 0 ? (
-            <h1 class="mb-6 text-4xl font-bold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">{s.title}</h1>
-          ) : (
-            <h2 class="mb-6 text-4xl font-bold leading-[1.08] tracking-tight text-charcoal sm:text-5xl lg:text-6xl">{s.title}</h2>
-          )}
-          {s.sub && <p class="mb-8 text-lg text-muted">{s.sub}</p>}
-          <div class="flex flex-wrap gap-3">
-            {s.cta && <a class="btn btn--primary btn--shine" href={`${base}${s.cta.href.replace(/^\//, "")}`}>{s.cta.label}</a>}
-            <a class="btn btn--secondary" href={`${base}about`}>Our Story</a>
-          </div>
-        </div>
-
-        <div class="relative ml-auto w-full max-w-xl">
-          <div class="absolute -right-4 -top-4 h-[85%] w-[85%] rounded-3xl bg-saffron-100" aria-hidden="true"></div>
+      <div class="mx-auto w-full max-w-6xl px-5">
+        <div class="relative min-h-[440px] overflow-hidden rounded-[28px] shadow-pop sm:min-h-[520px]">
           <Image
             src={img(s.image)}
             alt={s.title}
-            class="relative aspect-[4/3] w-full rounded-2xl object-cover object-top shadow-pop"
-            widths={[400, 640, 800, 1024]}
-            sizes="(min-width: 1024px) 46vw, 92vw"
+            class="absolute inset-0 h-full w-full object-cover object-top"
+            widths={[600, 900, 1200, 1600, 2000]}
+            sizes="(min-width: 1024px) 75rem, 100vw"
             format="webp"
             loading={i === 0 ? "eager" : "lazy"}
             fetchpriority={i === 0 ? "high" : "auto"}
           />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/95 via-primary-dark/55 to-primary-dark/10"></div>
+          <div class="relative z-10 flex min-h-[440px] flex-col justify-end px-6 py-8 sm:min-h-[520px] sm:px-12 sm:py-12">
+            <div class="badge-chip mb-5">
+              <span class="h-2 w-2 rounded-full bg-secondary"></span>
+              {s.tag}
+            </div>
+            {i === 0 ? (
+              <h1 class="mb-4 max-w-3xl text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">{s.title}</h1>
+            ) : (
+              <h2 class="mb-4 max-w-3xl text-3xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">{s.title}</h2>
+            )}
+            {s.sub && <p class="mb-8 max-w-2xl text-base text-zinc-200 sm:text-lg">{s.sub}</p>}
+            <div class="flex flex-wrap gap-3">
+              {s.cta && <a class="btn btn--on-dark" href={`${base}${s.cta.href.replace(/^\//, "")}`}>{s.cta.label}</a>}
+              <a class="btn btn--ghost" href={`${base}about`}>Our Story</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

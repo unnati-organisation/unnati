@@ -98,7 +98,7 @@ const socials = [
     <meta name="twitter:image" content={ogImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Text:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
     <script is:inline type="application/ld+json" set:html={JSON.stringify(orgJsonLd)} />
     <script is:inline type="application/ld+json" set:html={JSON.stringify(webSiteJsonLd)} />
@@ -117,25 +117,25 @@ const socials = [
   </head>
   <body>
     <!-- Brand band -->
-    <header class="border-b border-line bg-paper">
+    <header class="border-b border-outline-variant bg-surface">
       <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-8 px-5 py-4">
         <a href={base} class="flex items-center gap-3" aria-label="UNNATI home">
           <img src={`${base}images/logo-hi-full.png`} alt="UNNATI" class="h-16 w-auto" />
           <span class="flex flex-col justify-center">
-            <span class="text-2xl font-bold leading-none tracking-tight text-charcoal">UNNATI</span>
+            <span class="text-2xl font-bold leading-none tracking-tight text-on-surface">UNNATI</span>
             <span class="mt-1 hidden text-xs tracking-wide text-muted sm:block">Organisation for Development Education</span>
           </span>
         </a>
         <div class="flex items-center gap-3 sm:gap-5">
           <div id="google_translate_element" class="hidden" aria-hidden="true"></div>
-          <div class="flex items-center gap-1 rounded-full border border-line bg-white p-1 shadow-card" role="group" aria-label="Choose language">
+          <div class="flex items-center gap-1 rounded-full border border-outline bg-surface-container-low p-1 shadow-card" role="group" aria-label="Choose language">
             <button type="button" class="lang-btn active" data-lang="en">EN</button>
             <button type="button" class="lang-btn" data-lang="hi">हिंदी</button>
             <button type="button" class="lang-btn" data-lang="gu">ગુજરાતી</button>
           </div>
           <div class="hidden gap-2 sm:flex">
             {socials.map((s) => (
-              <a href={s.href} target="_blank" rel="noopener" class="flex h-9 w-9 items-center justify-center rounded-full bg-charcoal text-xs font-semibold text-white transition duration-200 ease-in-out hover:bg-saffron-500 hover:text-charcoal" aria-label={s.label}><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d={s.icon} /></svg></a>
+              <a href={s.href} target="_blank" rel="noopener" class="flex h-9 w-9 items-center justify-center rounded-full bg-surface-container text-xs font-semibold text-on-surface-variant transition duration-200 ease-in-out hover:bg-primary hover:text-on-primary" aria-label={s.label}><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d={s.icon} /></svg></a>
             ))}
           </div>
         </div>
@@ -143,17 +143,17 @@ const socials = [
     </header>
 
     <!-- Sticky nav band -->
-    <div class="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md transition-shadow duration-200 ease-in-out" id="siteHeaderNav">
+    <div class="sticky top-0 z-40 border-b border-outline-variant bg-surface/85 backdrop-blur-md transition-shadow duration-200 ease-in-out" id="siteHeaderNav">
       <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-5 min-h-[60px]">
         <nav class="site-nav" aria-label="Primary">
           <ul class="nav-list m-0 flex list-none items-center gap-0.5 p-0">
             {navLinks.map((link) => (
               <li class={link.children ? "group relative" : "relative"}>
-                <a href={link.href} class="block rounded-lg px-3.5 py-2 text-sm font-medium text-charcoal transition duration-200 ease-in-out hover:bg-saffron-50 hover:text-saffron-600">{link.label}</a>
+                <a href={link.href} class="block rounded-lg px-3.5 py-2 text-sm font-medium text-on-surface transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">{link.label}</a>
                 {link.children && (
-                  <ul class="dropdown invisible absolute left-0 top-full z-50 min-w-[280px] list-none rounded-xl border border-line bg-white p-2 opacity-0 shadow-pop transition duration-200 ease-in-out group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+                  <ul class="dropdown invisible absolute left-0 top-full z-50 min-w-[280px] list-none rounded-xl border border-outline-variant bg-surface-container-low p-2 opacity-0 shadow-pop transition duration-200 ease-in-out group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                     {link.children.map((c) => (
-                      <li><a href={c.href} class="block rounded-lg px-3 py-2 text-sm text-charcoal transition duration-200 ease-in-out hover:bg-saffron-50 hover:text-saffron-600">{c.label}</a></li>
+                      <li><a href={c.href} class="block rounded-lg px-3 py-2 text-sm text-on-surface transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">{c.label}</a></li>
                     ))}
                   </ul>
                 )}
@@ -162,16 +162,16 @@ const socials = [
           </ul>
         </nav>
         <button class="hamburger flex flex-col items-center justify-center gap-[5px] rounded-lg p-2 lg:hidden" id="hamburger" aria-label="Menu" aria-expanded="false">
-          <span class="block h-0.5 w-6 rounded bg-charcoal"></span>
-          <span class="block h-0.5 w-6 rounded bg-charcoal"></span>
-          <span class="block h-0.5 w-6 rounded bg-charcoal"></span>
+          <span class="block h-0.5 w-6 rounded bg-on-surface"></span>
+          <span class="block h-0.5 w-6 rounded bg-on-surface"></span>
+          <span class="block h-0.5 w-6 rounded bg-on-surface"></span>
         </button>
       </div>
     </div>
 
     <slot />
 
-    <footer class="bg-charcoal text-zinc-400">
+    <footer class="bg-inkdark text-zinc-400">
       <div class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
         <div>
           <div class="mb-4 flex items-center gap-3">
@@ -181,7 +181,7 @@ const socials = [
           <p>Organisation for Development Education — promoting social inclusion and democratic governance across Western India since 1990.</p>
           <div class="mt-4 flex gap-2">
             {socials.map((s) => (
-              <a href={s.href} target="_blank" rel="noopener" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-xs font-semibold text-white transition duration-200 ease-in-out hover:bg-saffron-500 hover:text-charcoal" aria-label={s.label}><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d={s.icon} /></svg></a>
+              <a href={s.href} target="_blank" rel="noopener" class="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-xs font-semibold text-white transition duration-200 ease-in-out hover:bg-secondary hover:text-inkdark" aria-label={s.label}><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d={s.icon} /></svg></a>
             ))}
           </div>
         </div>
@@ -189,11 +189,11 @@ const socials = [
         <div>
           <h4 class="mb-4 text-base text-white">Explore</h4>
           <ul class="footer-links m-0 list-none space-y-2 p-0">
-            <li><a href={`${base}about`} class="transition duration-200 ease-in-out hover:text-saffron-300">About Us</a></li>
-            <li><a href={`${base}thematic-anchors`} class="transition duration-200 ease-in-out hover:text-saffron-300">Thematic Anchors</a></li>
-            <li><a href={`${base}resources`} class="transition duration-200 ease-in-out hover:text-saffron-300">Resources</a></li>
-            <li><a href={`${base}accountability-and-transparency`} class="transition duration-200 ease-in-out hover:text-saffron-300">Accountability & Transparency</a></li>
-            <li><a href={`${base}contact`} class="transition duration-200 ease-in-out hover:text-saffron-300">Contact</a></li>
+            <li><a href={`${base}about`} class="transition duration-200 ease-in-out hover:text-secondary-light">About Us</a></li>
+            <li><a href={`${base}thematic-anchors`} class="transition duration-200 ease-in-out hover:text-secondary-light">Thematic Anchors</a></li>
+            <li><a href={`${base}resources`} class="transition duration-200 ease-in-out hover:text-secondary-light">Resources</a></li>
+            <li><a href={`${base}accountability-and-transparency`} class="transition duration-200 ease-in-out hover:text-secondary-light">Accountability & Transparency</a></li>
+            <li><a href={`${base}contact`} class="transition duration-200 ease-in-out hover:text-secondary-light">Contact</a></li>
           </ul>
         </div>
 
@@ -201,7 +201,7 @@ const socials = [
           <h4 class="mb-4 text-base text-white">Thematic Anchors</h4>
           <ul class="footer-links m-0 list-none space-y-2 p-0">
             {anchors.map((a) => (
-              <li><a href={`${base}thematic-anchors/${a.slug}`} class="transition duration-200 ease-in-out hover:text-saffron-300">{a.nav}</a></li>
+              <li><a href={`${base}thematic-anchors/${a.slug}`} class="transition duration-200 ease-in-out hover:text-secondary-light">{a.nav}</a></li>
             ))}
           </ul>
         </div>
@@ -213,15 +213,15 @@ const socials = [
             216, Azad Society,<br />
             Ahmedabad 380 015, Gujarat (India)
           </address>
-          <p class="mb-1 mt-3 text-saffron-300">+91-79-26746145 · 26733296</p>
-          <p class="text-saffron-300">psu_unnati@unnati.org</p>
+          <p class="mb-1 mt-3 text-secondary-light">+91-79-26746145 · 26733296</p>
+          <p class="text-secondary-light">psu_unnati@unnati.org</p>
         </div>
       </div>
 
       <div class="border-t border-white/10 py-5">
         <div class="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-5 text-sm">
           <span>© {new Date().getFullYear()} UNNATI. All rights reserved.</span>
-          <span class="text-saffron-300">Core content in English · Materials also in हिंदी & ગુજરાતી</span>
+          <span class="text-secondary-light">Core content in English · Materials also in हिंदी & ગુજરાતી</span>
         </div>
       </div>
     </footer>

@@ -3,33 +3,34 @@ import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import { policyGroups, certifications, adminFinancial, annualReports } from "../data/accountability";
 import { img } from "../lib/images";
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout title="Accountability & Transparency · UNNATI" description="UNNATI's institutional, financial and governance policies, annual reports and accountability commitments.">
-  <section class="relative overflow-hidden bg-inkdark">
-    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(229,142,38,0.14), transparent 46%), radial-gradient(circle at 4% 100%, rgba(229,142,38,0.1), transparent 40%);"></div>
-    <div class="relative mx-auto w-full max-w-6xl px-5 py-12">
-      <div class="kicker mb-4 text-saffron-300">Accountability & Transparency</div>
-      <h1 class="max-w-3xl text-4xl font-bold text-white sm:text-5xl">Open, accountable, sustainable.</h1>
-      <p class="mt-5 max-w-2xl text-lg text-zinc-300">
+  <section class="relative overflow-hidden bg-surface-container">
+    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(107,64,40,0.12), transparent 46%), radial-gradient(circle at 4% 100%, rgba(107,64,40,0.08), transparent 40%);"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-5 py-14">
+      <div class="kicker mb-4">Accountability & Transparency</div>
+      <h1 class="max-w-3xl text-4xl font-bold text-on-surface sm:text-5xl">Open, accountable, sustainable.</h1>
+      <p class="mt-5 max-w-2xl text-lg text-muted">
         Institutional, financial and ethical policies that guide how UNNATI works, alongside our annual reports
         and governance commitments.
       </p>
     </div>
   </section>
 
-  <section class="bg-saffron-50/70">
-    <div class="mx-auto w-full max-w-6xl px-5 py-12">
-      <nav class="flex flex-wrap gap-1.5 rounded-full border border-line bg-white p-1.5 shadow-card" aria-label="Sections">
-        <a href="#financials" class="rounded-full px-4 py-2 text-sm font-semibold text-charcoal transition duration-200 ease-in-out hover:bg-saffron-50">Financials</a>
-        <a href="#policies" class="rounded-full px-4 py-2 text-sm font-semibold text-muted transition duration-200 ease-in-out hover:bg-saffron-50 hover:text-charcoal">Policies</a>
-        <a href="#certifications" class="rounded-full px-4 py-2 text-sm font-semibold text-muted transition duration-200 ease-in-out hover:bg-saffron-50 hover:text-charcoal">Certifications</a>
-        <a href="#annual-reports" class="rounded-full px-4 py-2 text-sm font-semibold text-muted transition duration-200 ease-in-out hover:bg-saffron-50 hover:text-charcoal">Annual Reports</a>
+  <section class="bg-surface-container">
+    <div class="mx-auto w-full max-w-6xl px-5 py-14">
+      <nav class="flex flex-wrap gap-1.5 rounded-full border border-outline bg-surface-container-low p-1.5 shadow-card" aria-label="Sections">
+        <a href="#financials" class="rounded-full bg-secondary-container px-4 py-2 text-sm font-medium text-on-secondary-container transition duration-200 ease-in-out">Financials</a>
+        <a href="#policies" class="rounded-full px-4 py-2 text-sm font-medium text-on-surface-variant transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">Policies</a>
+        <a href="#certifications" class="rounded-full px-4 py-2 text-sm font-medium text-on-surface-variant transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">Certifications</a>
+        <a href="#annual-reports" class="rounded-full px-4 py-2 text-sm font-medium text-on-surface-variant transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">Annual Reports</a>
       </nav>
 
       <div id="financials" class="mt-12">
         <div class="kicker mb-3">Financials</div>
-        <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">Responsible stewardship</h2>
+        <h2 class="type-headline text-on-surface">Responsible stewardship</h2>
         <p class="mt-3 text-muted">
           UNNATI is a GuideStar India Gold-certified organisation, following a detailed Financial & Accounting
           Manual and Asset Management Policy. Funding spans the European Commission, GIZ, partner
@@ -37,15 +38,15 @@ import { img } from "../lib/images";
         </p>
         <a href="#policies" class="btn btn--primary mt-6">View Policies</a>
 
-        <div class="mt-10 border-t border-line pt-8">
+        <div class="mt-10 border-t border-outline-variant pt-8">
           <div class="kicker mb-3">Disclosure</div>
-          <h3 class="text-xl font-bold text-charcoal sm:text-2xl">Admin & Financial Information</h3>
+          <h3 class="text-xl font-bold text-on-surface sm:text-2xl">Admin & Financial Information</h3>
           <p class="mt-2 text-muted">Annual administrative and financial disclosures made in the spirit of transparency.</p>
           <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {adminFinancial.map((a) => (
               <a href={a.url} target="_blank" rel="noopener noreferrer" class="card card-hover block p-5 text-center">
-                <h4 class="mb-2 text-base text-charcoal">{a.label}</h4>
-                <span class="text-xs font-bold text-saffron-600">Open PDF ↗</span>
+                <h4 class="mb-2 type-title text-on-surface">{a.label}</h4>
+                <span class="text-xs font-bold text-secondary-dark">Open PDF ↗</span>
               </a>
             ))}
           </div>
@@ -54,19 +55,19 @@ import { img } from "../lib/images";
 
       <div id="policies" class="mt-14">
         <div class="kicker mb-3">Institutional Framework</div>
-        <h2 class="text-3xl font-bold text-charcoal">Policies</h2>
+        <h2 class="type-headline text-on-surface">Policies</h2>
         <div class="mt-6 space-y-10">
           {policyGroups.map((g) => (
             <div>
-              <h3 class="mb-4 flex items-center gap-2 text-lg font-bold text-saffron-700">
+              <h3 class="mb-4 flex items-center gap-2 text-lg font-bold text-primary">
                 <span aria-hidden="true">{g.icon}</span>
                 {g.group}
               </h3>
               <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {g.items.map((item) => (
                   <a href={item.url} target="_blank" rel="noopener noreferrer" class="card card-hover block p-5">
-                    <h4 class="mb-1.5 text-base text-charcoal">{item.title}</h4>
-                    <p class="mb-0 text-sm text-muted">{item.note}</p>
+                    <h4 class="mb-1.5 type-title text-on-surface">{item.title}</h4>
+                    <p class="mb-0 type-body text-muted">{item.note}</p>
                   </a>
                 ))}
               </div>
@@ -77,14 +78,14 @@ import { img } from "../lib/images";
 
       <div id="certifications" class="mt-14">
         <div class="kicker mb-3">Certifications</div>
-        <h2 class="text-3xl font-bold text-charcoal">Registrations & Recognitions</h2>
+        <h2 class="type-headline text-on-surface">Registrations & Recognitions</h2>
         <p class="mt-2 text-muted">UNNATI's registrations and certifications, verified on the GuideStar India platform.</p>
         <div class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {certifications.map((c) => (
             <a href={c.url} target="_blank" rel="noopener noreferrer" class="card card-hover block p-5">
-              <h4 class="mb-1.5 text-base text-charcoal">{c.title}</h4>
-              <p class="mb-3 text-sm text-muted">{c.note}</p>
-              <span class="text-xs font-bold text-saffron-600">
+              <h4 class="mb-1.5 type-title text-on-surface">{c.title}</h4>
+              <p class="mb-3 type-body text-muted">{c.note}</p>
+              <span class="text-xs font-bold text-secondary-dark">
                 {c.external ? "View on GuideStar ↗" : "View document ↗"}
               </span>
             </a>
@@ -94,14 +95,14 @@ import { img } from "../lib/images";
     </div>
   </section>
 
-  <section id="annual-reports" class="mx-auto w-full max-w-6xl px-5 py-12">
+  <section id="annual-reports" class="mx-auto w-full max-w-6xl px-5 py-14">
     <div class="kicker mb-3">Annual Reports</div>
-    <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">Our Reports by Year</h2>
+    <h2 class="type-headline text-on-surface">Our Reports by Year</h2>
     <p class="mt-2 text-muted">Two decades of published annual reports, from 2002–03 to 2024–25.</p>
     <div class="mt-8 grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8">
       {annualReports.map((r) => (
-        <div class="card p-2 text-center">
-          <div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-charcoal">
+        <a href={`${base}${r.url}`} target="_blank" rel="noopener noreferrer" class="card card-hover block p-2 text-center">
+          <div class="relative aspect-[3/4] overflow-hidden rounded-lg bg-inkdark">
             <Image
               src={img(r.image)}
               alt={`Annual report ${r.label}`}
@@ -112,8 +113,9 @@ import { img } from "../lib/images";
               loading="lazy"
             />
           </div>
-          <div class="px-1 py-2 text-xs font-bold text-charcoal">{r.label}</div>
-        </div>
+          <div class="px-1 py-2 text-xs font-bold text-on-surface">{r.label}</div>
+          <span class="text-[10px] font-bold text-secondary-dark">Open PDF ↗</span>
+        </a>
       ))}
     </div>
   </section>

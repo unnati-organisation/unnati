@@ -6,12 +6,12 @@ import { img } from "../lib/images";
 ---
 
 <Layout title="Contact · UNNATI" description="Get in touch with UNNATI offices across Ahmedabad, Jodhpur, Kutch and New Delhi.">
-  <section class="relative overflow-hidden bg-inkdark">
-    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(229,142,38,0.14), transparent 46%), radial-gradient(circle at 4% 100%, rgba(229,142,38,0.1), transparent 40%);"></div>
-    <div class="relative mx-auto w-full max-w-6xl px-5 py-12">
-      <div class="kicker mb-4 text-saffron-300">Contact Us</div>
-      <h1 class="max-w-3xl text-4xl font-bold text-white sm:text-5xl">Reach our offices.</h1>
-      <p class="mt-5 max-w-2xl text-lg text-zinc-300">
+  <section class="relative overflow-hidden bg-surface-container">
+    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(107,64,40,0.12), transparent 46%), radial-gradient(circle at 4% 100%, rgba(107,64,40,0.08), transparent 40%);"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-5 py-14">
+      <div class="kicker mb-4">Contact Us</div>
+      <h1 class="max-w-3xl text-4xl font-bold text-on-surface sm:text-5xl">Reach our offices.</h1>
+      <p class="mt-5 max-w-2xl text-lg text-muted">
         UNNATI works across Gujarat, Rajasthan and Delhi. Find the office closest to you or send us a message.
       </p>
     </div>
@@ -21,7 +21,7 @@ import { img } from "../lib/images";
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
       {offices.map((o) => (
         <div class="card card-hover flex flex-col overflow-hidden">
-          <div class="relative aspect-[4/3] overflow-hidden bg-charcoal">
+          <div class="relative aspect-[4/3] overflow-hidden bg-inkdark">
             <Image
               src={img(o.image)}
               alt={`${o.city} office`}
@@ -33,40 +33,40 @@ import { img } from "../lib/images";
             />
           </div>
           <div class="flex flex-1 flex-col p-6">
-            <div class="text-base font-bold text-saffron-700">{o.city}</div>
-            <div class="mt-0.5 text-sm text-charcoal">{o.label}</div>
+            <div class="type-title font-bold text-primary">{o.city}</div>
+            <div class="mt-0.5 text-sm text-on-surface">{o.label}</div>
             <p class="mt-2 text-sm leading-relaxed text-muted">{o.address}</p>
-            <p class="mt-auto pt-4 text-sm font-semibold text-charcoal">{o.phone}</p>
-            <a href={`mailto:${o.email}`} class="text-sm font-semibold text-saffron-700 transition duration-200 ease-in-out hover:text-saffron-600 hover:underline">{o.email}</a>
+            <p class="mt-auto pt-4 text-sm font-semibold text-on-surface">{o.phone}</p>
+            <a href={`mailto:${o.email}`} class="text-sm font-semibold text-primary transition duration-200 ease-in-out hover:text-secondary-dark hover:underline">{o.email}</a>
           </div>
         </div>
       ))}
     </div>
   </section>
 
-  <section class="bg-saffron-50/70">
-    <div class="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-5 py-12 lg:grid-cols-2">
+  <section class="bg-surface-container">
+    <div class="mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-5 py-14 lg:grid-cols-2">
       <div>
         <div class="kicker mb-3">Write to us</div>
-        <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">Feedback & queries</h2>
+        <h2 class="type-headline text-on-surface">Feedback & queries</h2>
         <p class="mt-3 text-muted">
           For programme partnerships, publications, or general enquiries, drop us a line and our team will follow up.
         </p>
-        <p class="mt-5 text-charcoal"><strong>Head Office:</strong> 216, Azad Society, Ahmedabad 380015, Gujarat (India)</p>
-        <p class="text-charcoal"><strong>Email:</strong> psu_unnati@unnati.org</p>
-        <p class="text-charcoal"><strong>Tel:</strong> +91-79-26746145 · 26733296</p>
+        <p class="mt-5 text-on-surface"><strong>Head Office:</strong> 216, Azad Society, Ahmedabad 380015, Gujarat (India)</p>
+        <p class="text-on-surface"><strong>Email:</strong> psu_unnati@unnati.org</p>
+        <p class="text-on-surface"><strong>Tel:</strong> +91-79-26746145 · 26733296</p>
       </div>
       <form class="card space-y-4 p-7" onsubmit="alert('Thank you — your message has been noted.'); return false;">
         <div>
-          <label for="cf-name" class="mb-1.5 block text-sm font-semibold text-charcoal">Full name</label>
+          <label for="cf-name" class="mb-1.5 block text-sm font-semibold text-on-surface">Full name</label>
           <input id="cf-name" name="name" type="text" placeholder="Your name" required class="field" />
         </div>
         <div>
-          <label for="cf-email" class="mb-1.5 block text-sm font-semibold text-charcoal">Email</label>
+          <label for="cf-email" class="mb-1.5 block text-sm font-semibold text-on-surface">Email</label>
           <input id="cf-email" name="email" type="email" placeholder="you@example.com" required class="field" />
         </div>
         <div>
-          <label for="cf-msg" class="mb-1.5 block text-sm font-semibold text-charcoal">Message</label>
+          <label for="cf-msg" class="mb-1.5 block text-sm font-semibold text-on-surface">Message</label>
           <textarea id="cf-msg" name="message" rows="5" placeholder="Your message…" required class="field"></textarea>
         </div>
         <button class="btn btn--primary btn--shine w-full" type="submit">Send Message</button>

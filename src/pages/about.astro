@@ -56,12 +56,12 @@ const vms = [
 
 <Layout title="About Us · UNNATI" description="Vision, mission and 35 years of UNNATI's work for social inclusion and democratic governance.">
   <script is:inline type="application/ld+json" set:html={JSON.stringify(boardJsonLd)} />
-  <section class="relative overflow-hidden bg-inkdark">
-    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(229,142,38,0.14), transparent 46%), radial-gradient(circle at 4% 100%, rgba(229,142,38,0.1), transparent 40%);"></div>
-    <div class="relative mx-auto w-full max-w-6xl px-5 py-12">
-      <div class="kicker mb-4 text-saffron-300">About Us</div>
-      <h1 class="max-w-3xl text-4xl font-bold text-white sm:text-5xl">Three decades enabling participation.</h1>
-      <p class="mt-5 max-w-2xl text-lg text-zinc-300">
+  <section class="relative overflow-hidden bg-surface-container">
+    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(107,64,40,0.12), transparent 46%), radial-gradient(circle at 4% 100%, rgba(107,64,40,0.08), transparent 40%);"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-5 py-14">
+      <div class="kicker mb-4">About Us</div>
+      <h1 class="max-w-3xl text-4xl font-bold text-on-surface sm:text-5xl">Three decades enabling participation.</h1>
+      <p class="mt-5 max-w-2xl text-lg text-muted">
         UNNATI is a voluntary non-profit promoting social inclusion and democratic governance so the vulnerable
         participate decisively in mainstream development.
       </p>
@@ -72,7 +72,7 @@ const vms = [
   <section class="mx-auto w-full max-w-6xl px-5 py-12">
     <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
       {vms.map((v) => (
-        <article class="card card-hover flex flex-col overflow-hidden bg-charcoal text-white">
+        <article class="card card-hover flex flex-col overflow-hidden">
           <div class="relative h-48 overflow-hidden">
             <Image
               src={img(v.image)}
@@ -83,15 +83,15 @@ const vms = [
               format="webp"
               loading="lazy"
             />
-            <div class="absolute inset-0 bg-gradient-to-t from-charcoal/95 via-charcoal/30 to-transparent"></div>
-            <span class="absolute left-3 top-3 rounded-full bg-saffron-500 px-2.5 py-1 text-xs font-extrabold tracking-widest text-charcoal">{v.num}</span>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/30 to-transparent"></div>
+            <span class="absolute left-3 top-3 rounded-full bg-secondary-container px-2.5 py-1 text-xs font-bold tracking-widest text-on-secondary-container">{v.num}</span>
             <span class="absolute right-3 top-2 text-xl text-white/90">{v.icon}</span>
-            <span class="absolute bottom-3 left-4 text-[0.7rem] font-bold uppercase tracking-[0.14em] text-saffron-300">{v.kicker}</span>
+            <span class="absolute bottom-3 left-4 type-label text-secondary-light">{v.kicker}</span>
           </div>
           <div class="flex flex-1 flex-col p-6">
-            <h3 class="mb-3 text-xl text-white">{v.title}</h3>
-            <div class="mb-3 h-0.5 w-10 rounded bg-saffron-500"></div>
-            <p class="mb-0 text-sm text-zinc-300">{v.body}</p>
+            <h3 class="mb-3 type-title text-on-surface">{v.title}</h3>
+            <div class="mb-3 h-0.5 w-10 rounded bg-primary"></div>
+            <p class="mb-0 type-body text-muted">{v.body}</p>
           </div>
         </article>
       ))}
@@ -99,15 +99,15 @@ const vms = [
   </section>
 
   <!-- History timeline -->
-  <section class="bg-saffron-50/70">
-    <div class="mx-auto w-full max-w-6xl px-5 py-12">
+  <section class="bg-surface-container">
+    <div class="mx-auto w-full max-w-6xl px-5 py-14">
       <div class="kicker mb-3">Our Journey</div>
-      <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">History</h2>
+      <h2 class="type-headline text-on-surface">History</h2>
       <div class="mt-8 space-y-4">
         {timeline.map((t) => (
-          <div class="grid grid-cols-1 gap-2 rounded-2xl border-l-4 border-saffron-500 bg-white p-5 shadow-card ring-1 ring-line sm:grid-cols-[130px_1fr] sm:gap-4">
-            <div class="text-lg font-bold text-saffron-600">{t.year}</div>
-            <p class="mb-0 text-charcoal">{t.text}</p>
+          <div class="grid grid-cols-1 gap-2 rounded-2xl border-l-4 border-primary bg-surface-container-low p-5 shadow-card ring-1 ring-outline-variant sm:grid-cols-[130px_1fr] sm:gap-4">
+            <div class="text-lg font-bold text-secondary-dark">{t.year}</div>
+            <p class="mb-0 text-on-surface">{t.text}</p>
           </div>
         ))}
       </div>
@@ -115,16 +115,16 @@ const vms = [
   </section>
 
   <!-- Board -->
-  <section class="mx-auto w-full max-w-6xl px-5 py-12">
+  <section class="mx-auto w-full max-w-6xl px-5 py-14">
     <div class="max-w-2xl">
       <div class="kicker mb-3">Leadership</div>
-      <h2 class="text-3xl font-bold text-charcoal sm:text-4xl">Board Members</h2>
+      <h2 class="type-headline text-on-surface">Board Members</h2>
       <p class="mt-2 text-muted">Guiding UNNATI's governance and direction.</p>
     </div>
     <div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
       {board.map((m) => (
         <div class="text-center">
-          <div class="mx-auto mb-4 aspect-square w-full max-w-[180px] overflow-hidden rounded-full ring-1 ring-line">
+          <div class="mx-auto mb-4 aspect-square w-full max-w-[180px] overflow-hidden rounded-full ring-1 ring-outline-variant">
             <Image
               src={img(m.image)}
               alt={m.name}
@@ -135,8 +135,8 @@ const vms = [
               loading="lazy"
             />
           </div>
-          <h4 class="mb-1 text-lg text-charcoal">{m.name}</h4>
-          <div class="text-sm font-bold text-saffron-600">{m.role}</div>
+          <h4 class="mb-1 type-title text-on-surface">{m.name}</h4>
+          <div class="text-sm font-bold text-secondary-dark">{m.role}</div>
           <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
         </div>
       ))}
