@@ -44,6 +44,7 @@
   --color-line: rgba(0, 0, 0, 0.08);
   --color-linedark: rgba(255, 255, 255, 0.14);
 
+  --color-saffron: #e58e26;
   --color-saffron-50: #fff7ed;
   --color-saffron-100: #fef3c7;
   --color-saffron-200: #fde68a;
@@ -168,10 +169,10 @@
     transform: scale(0.97);
   }
 
-  /* Filled — Primary clay on white */
+  /* Filled — Saffron, soft black text */
   .btn--primary {
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
+    background-color: var(--color-saffron);
+    color: var(--color-charcoal);
   }
   .btn--primary:hover {
     background-color: var(--color-primary);
@@ -275,9 +276,9 @@
     background-color: var(--color-primary-container);
   }
   .filter-chip.active {
-    background-color: var(--color-secondary-container);
-    border-color: var(--color-secondary-container);
-    color: var(--color-on-secondary-container);
+    background-color: var(--color-saffron);
+    border-color: var(--color-saffron);
+    color: var(--color-charcoal);
   }
 
   .badge-chip {
@@ -391,15 +392,15 @@
     height: 2.5rem;
     width: 2.5rem;
     border-radius: 999px;
-    background-color: var(--color-primary-container);
-    color: var(--color-primary);
+    background-color: var(--color-saffron);
+    color: var(--color-charcoal);
     font-size: 1rem;
     transition: background-color 200ms ease-in-out, color 200ms ease-in-out,
       transform 200ms ease-in-out;
   }
   .group:hover .cta-icon {
-    background-color: var(--color-primary);
-    color: var(--color-on-primary);
+    background-color: var(--color-charcoal);
+    color: var(--color-saffron);
     transform: translateX(4px);
   }
 

@@ -46,8 +46,8 @@ const related = projectsForAnchor(slug);
         <a
           href={`${base}thematic-anchors/${a.slug}`}
           class={a.slug === slug
-            ? "rounded-full bg-primary px-4 py-2 text-sm font-medium text-on-primary transition duration-200 ease-in-out"
-            : "rounded-full px-4 py-2 text-sm font-medium text-on-surface-variant transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary"}
+            ? "rounded-full bg-saffron px-4 py-2 text-sm font-medium text-charcoal transition duration-200 ease-in-out"
+            : "rounded-full px-4 py-2 text-sm font-medium text-on-surface-variant transition duration-200 ease-in-out hover:bg-saffron hover:text-charcoal"}
         >{a.nav}</a>
       ))}
     </nav>
@@ -75,7 +75,7 @@ const related = projectsForAnchor(slug);
               <ul class="mt-4 list-none space-y-1.5 p-0">
                 {t.points.map((pt) => (
                   <li class="relative pl-5 type-body text-on-surface">
-                    <span class="absolute left-0 top-[0.55em] h-2 w-2 rounded-full bg-primary"></span>
+                    <span class="absolute left-0 top-[0.55em] h-2 w-2 rounded-full bg-saffron"></span>
                     {pt}
                   </li>
                 ))}
@@ -91,11 +91,11 @@ const related = projectsForAnchor(slug);
     <section class="bg-surface-container">
       <div class="mx-auto w-full max-w-6xl px-5 py-14">
         <div class="kicker mb-3">Projects</div>
-        <h2 class="type-headline text-on-surface">Tagged Projects</h2>
-        <p class="mb-0 mt-2 max-w-2xl text-muted">Projects in this anchor — some also belong to other thematic anchors.</p>
+        <h2 class="type-headline text-on-surface">Key Projects</h2>
+        <p class="mb-0 mt-2 max-w-2xl text-muted">Key projects in this anchor — some also belong to other thematic anchors.</p>
         <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
           {related.map((p) => (
-            <a class="card card-hover flex flex-col overflow-hidden" href={`${base}thematic-anchors/${p.tags[0]}`}>
+            <a class="card card-hover flex flex-col overflow-hidden" href={`${base}projects/${p.slug}`}>
               <div class="relative aspect-[16/9] overflow-hidden bg-inkdark">
                 <Image
                   src={img(p.image)}

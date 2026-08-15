@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { updates } from "../data/updates";
+import { img } from "../lib/images";
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout
+  title="Updates · UNNATI"
+  description="Latest news and updates from UNNATI's field programmes — trainings, consultations, workshops and community events across Rajasthan and Gujarat."
+>
+  <section class="relative overflow-hidden bg-surface-container">
+    <div class="pointer-events-none absolute inset-0" style="background: radial-gradient(circle at 88% 8%, rgba(107,64,40,0.12), transparent 46%), radial-gradient(circle at 4% 100%, rgba(107,64,40,0.08), transparent 40%);"></div>
+    <div class="relative mx-auto w-full max-w-6xl px-5 py-14">
+      <div class="kicker mb-4">Latest News & Updates</div>
+      <h1 class="max-w-3xl text-4xl font-bold text-on-surface sm:text-5xl">Updates</h1>
+      <p class="mt-5 max-w-2xl text-lg text-muted">
+        Recent activities from our field programmes — trainings, consultations, workshops and
+        community events. Click a card to read the full story.
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto w-full max-w-6xl px-5 py-12">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {updates.map((u) => (
+        <a class="card card-hover group flex flex-col overflow-hidden" href={`${base}updates/${u.slug}`}>
+          <div class="relative aspect-[16/10] overflow-hidden bg-inkdark">
+            <Image
+              src={img(u.images[0])}
+              alt={u.title}
+              class="media-fade absolute inset-0 h-full w-full object-cover object-top"
+              widths={[480, 720, 960]}
+              sizes="(min-width: 1024px) 30vw, (min-width: 768px) 46vw, 92vw"
+              format="webp"
+              loading="lazy"
+            />
+            <div class="absolute left-3 top-3 flex items-center gap-1.5 rounded-full bg-saffron px-3 py-1 text-xs font-medium text-charcoal">
+              <span class="h-1.5 w-1.5 rounded-full bg-charcoal" aria-hidden="true"></span>
+              Update
+            </div>
+          </div>
+          <div class="flex flex-1 flex-col p-6">
+            <div class="mb-3 flex flex-wrap gap-2">
+              <span class="chip">{u.date}</span>
+              {u.venue && <span class="chip">{u.venue}</span>}
+            </div>
+            <h3 class="mb-2 type-title text-on-surface">{u.title}</h3>
+            <p class="mb-4 flex-1 type-body text-muted">{u.summary}</p>
+            <span class="mt-auto inline-flex items-center gap-3 text-sm font-semibold text-primary">
+              <span class="type-label">Read More</span>
+              <span class="cta-icon" aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>

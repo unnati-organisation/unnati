@@ -1,6 +1,7 @@
 import { anchors } from "./anchors";
 
 export interface Project {
+  slug: string;
   title: string;
   summary: string;
   image: string;
@@ -8,10 +9,13 @@ export interface Project {
   period: string;
   support: string;
   highlights: string[];
+  details?: string[];
+  gallery?: string[];
 }
 
 export const projects: Project[] = [
   {
+    slug: "marudhar-mein-jal-swavlamban",
     title: "Marudhar Mein Jal Swavlamban",
     summary:
       "Ensuring water security and combating desertification across 150 villages of the Thar desert, reviving nadis, orans and gauchars with women-led Jal Saheli groups.",
@@ -27,6 +31,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "improving-access-to-public-schemes",
     title: "Improving Access to Public Schemes in Backward Districts",
     summary:
       "Strengthening inclusive civic leadership and social accountability so public programmes reach the last mile in 60 gram panchayats of Barmer (Rajasthan) and Sabarkantha (Gujarat).",
@@ -42,6 +47,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "cluster-facilitation-team-cft",
     title: "Cluster Facilitation Team (CFT) for MGNREGA & NRLM",
     summary:
       "A facilitation and capacity-building project to synergise MGNREGA and NRLM — enhancing rural livelihoods through sustainable assets and community demand for accountability in Balesar block, Jodhpur.",
@@ -57,6 +63,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "socio-economic-baseline-coastal-marine-pas",
     title: "Socio-Economic Baseline for Coastal & Marine PAs",
     summary:
       "A participatory baseline assessment in 12 villages around Khijadiya Bird Sanctuary (Jamnagar) and Gosabara Wetland (Porbandar) under the GIZ-supported CMPA project of MoEFCC.",
@@ -71,6 +78,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "pri-capacity-building-childrens-rights",
     title: "PRI Capacity Building on Children's Rights",
     summary:
       "With UNICEF support, developing training modules and materials to build the capacity of Panchayati Raj Institutions on the rights of children and effective implementation of programmes for them.",

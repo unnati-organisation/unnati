@@ -106,15 +106,15 @@ const stats = [
         </p>
         <ul class="mt-6 space-y-3">
           <li class="flex items-start gap-3 text-on-surface">
-            <span class="mt-1 text-xs text-secondary-dark">◆</span>
+            <span class="mt-1 text-xs text-saffron">◆</span>
             Participatory development education and capacity building
           </li>
           <li class="flex items-start gap-3 text-on-surface">
-            <span class="mt-1 text-xs text-secondary-dark">◆</span>
+            <span class="mt-1 text-xs text-saffron">◆</span>
             Grassroots mobilisation across Gujarat, Rajasthan and Delhi
           </li>
           <li class="flex items-start gap-3 text-on-surface">
-            <span class="mt-1 text-xs text-secondary-dark">◆</span>
+            <span class="mt-1 text-xs text-saffron">◆</span>
             Research, advocacy and policy engagement at every level
           </li>
         </ul>
@@ -170,7 +170,7 @@ const stats = [
     </div>
     <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
       {projects.slice(0, 2).map((p) => (
-        <a class="card card-hover group flex flex-col overflow-hidden" href={`${base}thematic-anchors/${p.tags[0]}`}>
+        <a class="card card-hover group flex flex-col overflow-hidden" href={`${base}projects/${p.slug}`}>
           <div class="relative aspect-[16/9] overflow-hidden bg-inkdark">
             <Image
               src={img(p.image)}

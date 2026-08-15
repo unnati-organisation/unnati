@@ -60,6 +60,7 @@ const navLinks = [
   { label: "About Us", href: `${base}about` },
   { label: "Thematic Anchors", href: `${base}thematic-anchors`, children: anchors.map((a) => ({ label: a.nav, href: `${base}thematic-anchors/${a.slug}` })) },
   { label: "Resources", href: `${base}resources` },
+  { label: "Updates", href: `${base}updates` },
   { label: "Accountability & Transparency", href: `${base}accountability-and-transparency`, children: [
     { label: "Financials", href: `${base}accountability-and-transparency#financials` },
     { label: "Policies", href: `${base}accountability-and-transparency#policies` },
@@ -120,9 +121,9 @@ const socials = [
     <header class="border-b border-outline-variant bg-surface">
       <div class="mx-auto flex w-full max-w-6xl items-center justify-between gap-8 px-5 py-4">
         <a href={base} class="flex items-center gap-3" aria-label="UNNATI home">
-          <img src={`${base}images/logo-hi-full.png`} alt="UNNATI" class="h-16 w-auto" />
+          <img src={`${base}images/logo-hi-full.png`} alt="UNNATI" class="h-12 w-auto sm:h-14 md:h-16 lg:h-20" />
           <span class="flex flex-col justify-center">
-            <span class="text-2xl font-bold leading-none tracking-tight text-on-surface">UNNATI</span>
+            <span class="text-2xl font-bold leading-none tracking-tight text-on-surface lg:text-3xl">UNNATI</span>
             <span class="mt-1 hidden text-xs tracking-wide text-muted sm:block">Organisation for Development Education</span>
           </span>
         </a>
@@ -149,11 +150,11 @@ const socials = [
           <ul class="nav-list m-0 flex list-none items-center gap-0.5 p-0">
             {navLinks.map((link) => (
               <li class={link.children ? "group relative" : "relative"}>
-                <a href={link.href} class="block rounded-lg px-3.5 py-2 text-sm font-medium text-on-surface transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">{link.label}</a>
+                <a href={link.href} class="block rounded-lg px-3.5 py-2 text-sm font-medium text-on-surface transition duration-200 ease-in-out hover:bg-saffron hover:text-charcoal">{link.label}</a>
                 {link.children && (
                   <ul class="dropdown invisible absolute left-0 top-full z-50 min-w-[280px] list-none rounded-xl border border-outline-variant bg-surface-container-low p-2 opacity-0 shadow-pop transition duration-200 ease-in-out group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
                     {link.children.map((c) => (
-                      <li><a href={c.href} class="block rounded-lg px-3 py-2 text-sm text-on-surface transition duration-200 ease-in-out hover:bg-primary-container hover:text-primary">{c.label}</a></li>
+                      <li><a href={c.href} class="block rounded-lg px-3 py-2 text-sm text-on-surface transition duration-200 ease-in-out hover:bg-saffron hover:text-charcoal">{c.label}</a></li>
                     ))}
                   </ul>
                 )}
