@@ -1,0 +1,10 @@
+id: panchayato-arthik-saddharta
+title: Panchayato Ni Arthik Saddharta
+description: Analysis of the state budget (Gujarat) from the panchayat perspective.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Panchayati Raj
+order: 74

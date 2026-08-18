@@ -1,0 +1,11 @@
+id: nfsa-leaflet
+title: NFSA (Ration) Pamphlet
+description: NFSA ration-card issues and the process to resolve them.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Public Schemes
+order: 70
+url: https://www.unnati.org/pdfs/NFSA_Pamphlet_11Apr2025.pdf

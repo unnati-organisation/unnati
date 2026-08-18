@@ -1,0 +1,11 @@
+id: rehab-package-towns
+title: Rehabilitation Package for the Towns
+description: Salient features of the rehabilitation package for earthquake-affected towns.
+format: leaflet
+themes:
+  - drr
+languages:
+  - English
+  - Gujarati
+badge: Earthquake
+order: 81

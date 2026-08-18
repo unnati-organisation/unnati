@@ -1,0 +1,10 @@
+id: jawahar-rojgar-yojana
+title: Jawahar Rojgar Yojana
+description: Details of the Jawahar Rojgar Yojana.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Public Schemes
+order: 73

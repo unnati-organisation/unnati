@@ -1,0 +1,10 @@
+id: panchayato-sarkari-yojana
+title: Panchayato Mate Ni Sarkari Yojana
+description: Details about government schemes for panchayats.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Public Schemes
+order: 75

@@ -19,15 +19,19 @@ for (const key of Object.keys(imageGlob)) {
 /** Whether an asset exists for the given legacy public path. */
 export function hasImage(path: string | undefined): boolean {
   if (!path) return false;
-  const key = path.startsWith("/") ? path : `/${path}`;
-  return key in byPublicPath;
+  return toPublicPath(path) in byPublicPath;
 }
 
 /** Map a legacy public asset path to its importable ImageMetadata. */
 export function img(path: string | undefined): ImageMetadata {
   if (!path) throw new Error(`<Image> requires a path, got ${String(path)}`);
-  const key = path.startsWith("/") ? path : `/${path}`;
-  const meta = byPublicPath[key];
+  const meta = byPublicPath[toPublicPath(path)];
   if (!meta) throw new Error(`Image not found for path: ${path}`);
   return meta;
+}
+
+/** Absolute values ("/images/x.jpg", "/pubs/y.jpg") are used as-is; the CMS
+ * stores uploads relative to /images, so relative values resolve under it. */
+function toPublicPath(path: string): string {
+  return path.startsWith("/") ? path : `/images/${path}`;
 }

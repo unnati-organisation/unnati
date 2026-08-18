@@ -15,12 +15,56 @@ const boardJsonLd = {
 };
 
 const timeline = [
-  { year: "1990–95", text: "UNNATI played the role of a capacity-building support institution in participatory planning, evaluation and organisational management." },
-  { year: "1995–2000", text: "A proactive role in development education on rising communalism, drought management and the adverse impact of liberalisation. UNNATI joined the Network of Collaborating Regional Support Organisations (NCRSOs) coordinated by PRIA." },
-  { year: "1999", text: "A formal review with three external evaluators to identify strategic issues and re-craft the strategy." },
-  { year: "2001–05", text: "Relief and rehabilitation work after the 2001 Gujarat earthquake and 2002 communal riots." },
-  { year: "2006", text: "An internal strategic review shapes UNNATI's three programme centres." },
-  { year: "Today", text: "35 years of educational support in Gujarat and 26 years in Rajasthan across the three programme centres." },
+  {
+    num: "01",
+    icon: "◎",
+    year: "1990–1993",
+    title: "Inception of UNNATI",
+    image: "/images/purpose-field.jpg",
+    alt: "UNNATI field work in its early years",
+    blurb: "Capacity development of Social Action Groups, with early studies on the impact of liberalisation on poor households and drought management.",
+    tags: ["Social Action Groups", "Liberalisation study", "Drought management"],
+  },
+  {
+    num: "02",
+    icon: "⛊",
+    year: "1994–2000",
+    title: "Strengthening Panchayati Raj Institutions",
+    image: "/images/hero-panchayat.jpg",
+    alt: "Gram panchayat strengthening",
+    blurb: "Continued support on rights and entitlements, promoted the Dalit Adhikar Abhiyan and began programme operations in Western Rajasthan.",
+    tags: ["Dalit Adhikar Abhiyan", "Western Rajasthan", "Panchayat Resource Centres", "Voter awareness"],
+  },
+  {
+    num: "03",
+    icon: "▲",
+    year: "2001–2008",
+    title: "Formal entry into Disaster Risk Reduction",
+    image: "/images/theme-cmdrr.jpg",
+    alt: "Community-based disaster risk reduction",
+    blurb: "Strategic shift to an issue-based educational organisation, promoting rural vernacular safe housing and supporting Gujarat's gender policy.",
+    tags: ["Rural safe housing", "Gender policy 2004", "Strategic shift"],
+  },
+  {
+    num: "04",
+    icon: "✦",
+    year: "2009–2016",
+    title: "Partnership with Government to scale impact",
+    image: "/images/theme-sa-social.jpg",
+    alt: "Social accountability in public programmes",
+    blurb: "State-wide MGNREGA social audit, SATCOM trainings for all Gram Panchayats with SIRD, and technical support to NDMA.",
+    tags: ["MGNREGA social audit", "SATCOM trainings", "JnNURM", "NDMA"],
+  },
+  {
+    num: "05",
+    icon: "◈",
+    year: "2017–2025",
+    title: "Field operations for vulnerability reduction",
+    image: "/images/hero-water.jpg",
+    alt: "Community water resources in western Rajasthan",
+    blurb: "Four block-level field operations, a governance-based development model through GP–CBO social compacts, and the Inter-Agency Group for disaster response.",
+    tags: ["Last-mile programmes", "GP–CBO social compact", "Inter-Agency Group"],
+  },
 ];
 
 const vms = [
@@ -99,15 +143,57 @@ const vms = [
   </section>
 
   <!-- History timeline -->
-  <section class="bg-surface-container">
+  <section class="bg-primary-dark">
     <div class="mx-auto w-full max-w-6xl px-5 py-14">
-      <div class="kicker mb-3">Our Journey</div>
-      <h2 class="type-headline text-on-surface">History</h2>
-      <div class="mt-8 space-y-4">
-        {timeline.map((t) => (
-          <div class="grid grid-cols-1 gap-2 rounded-2xl border-l-4 border-primary bg-surface-container-low p-5 shadow-card ring-1 ring-outline-variant sm:grid-cols-[130px_1fr] sm:gap-4">
-            <div class="text-lg font-bold text-secondary-dark">{t.year}</div>
-            <p class="mb-0 text-on-surface">{t.text}</p>
+      <div class="kicker mb-3 text-secondary-light">Our Journey</div>
+      <h2 class="type-headline text-white">History</h2>
+      <p class="mt-3 text-zinc-300">
+        Over three decades, UNNATI has evolved from providing generic capacity-building support to becoming a
+        <strong class="font-semibold text-secondary-light"> technical knowledge partner</strong> for state and national
+        governments. Its first decade focused on laying the groundwork for local self-governance and
+        <strong class="font-semibold text-secondary-light"> rights-based movements</strong>. A strategic shift occurred between 2001 and
+        2008, when the organization transitioned into an <strong class="font-semibold text-secondary-light">issue-based educational
+        body</strong> focusing on disaster risk reduction, gender mainstreaming, and social accountability. By 2009, it
+        adopted a <strong class="font-semibold text-secondary-light"> governance-based development model</strong> centered on forming
+        <strong class="font-semibold text-secondary-light"> social compacts</strong> between community-based organizations and Gram
+        Panchayats. Currently, UNNATI scales its impact through systemic partnerships with the governments and
+        networks of civil society networks.
+      </p>
+      <div class="relative mt-10">
+        <div class="absolute bottom-0 left-5 top-0 w-0.5 bg-white/40 lg:left-1/2" aria-hidden="true"></div>
+        {timeline.map((t, i) => (
+          <div class="relative mb-6 lg:grid lg:grid-cols-2 lg:gap-12">
+            <div class="absolute left-5 top-1/2 z-10 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-surface bg-saffron shadow-card lg:left-1/2" aria-hidden="true"></div>
+            <span class={i % 2 === 0
+              ? "absolute left-8 top-1/2 z-20 -translate-y-1/2 whitespace-nowrap rounded-lg bg-surface/85 px-2 py-0.5 text-xl font-bold text-primary backdrop-blur-sm lg:left-1/2 lg:translate-x-5 lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none lg:text-2xl lg:text-secondary-light"
+              : "absolute left-8 top-1/2 z-20 -translate-y-1/2 whitespace-nowrap rounded-lg bg-surface/85 px-2 py-0.5 text-xl font-bold text-primary backdrop-blur-sm lg:left-1/2 lg:-translate-x-[calc(100%+1.25rem)] lg:bg-transparent lg:px-0 lg:py-0 lg:backdrop-blur-none lg:text-2xl lg:text-secondary-light"}
+            >{t.year}</span>
+            <div class={`pl-12 lg:pl-0 ${i % 2 === 0 ? "lg:col-start-1" : "lg:col-start-2"}`}>
+              <article class="card flex overflow-hidden">
+                <div class="relative w-28 shrink-0 bg-inkdark sm:w-36 lg:w-40">
+                  <Image
+                    src={img(t.image)}
+                    alt={t.alt}
+                    class="absolute inset-0 h-full w-full object-cover object-top"
+                    widths={[240, 360, 480]}
+                    sizes="(min-width: 1024px) 160px, (min-width: 640px) 144px, 112px"
+                    format="webp"
+                    loading="lazy"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-t from-primary-dark/90 via-primary-dark/25 to-transparent"></div>
+                  <span class="absolute bottom-2 left-2 rounded-full bg-secondary-container px-2 py-0.5 text-[10px] font-bold text-on-secondary-container">{t.num}</span>
+                  <span class="absolute right-2 top-2 text-2xl text-secondary-light">{t.icon}</span>
+                </div>
+                <div class="flex flex-1 flex-col p-5">
+                  <h3 class="type-title text-on-surface">{t.title}</h3>
+                  <div class="mt-2 mb-2 h-0.5 w-8 rounded bg-primary"></div>
+                  <p class="mb-3 flex-1 type-body text-muted">{t.blurb}</p>
+                  <div class="flex flex-wrap gap-1.5">
+                    {t.tags.map((tag) => <span class="rounded-full bg-primary-container px-3 py-1 text-xs font-medium text-on-primary-container">{tag}</span>)}
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         ))}
       </div>

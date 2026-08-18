@@ -1,0 +1,10 @@
+id: gram-sabha-poster
+title: Poster on Gram Sabha
+description: Awareness raising for the working of the gram sabha.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Gram Sabha
+order: 79

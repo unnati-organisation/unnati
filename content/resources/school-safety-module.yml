@@ -1,0 +1,12 @@
+id: school-safety-module
+title: School Safety and Security
+description: A training module on school safety for DRR practitioners.
+format: book
+themes:
+  - drr
+languages:
+  - English
+badge: School Safety
+order: 45
+image: /pubs/school.jpg
+url: https://www.unnati.org/pdfs/books/Unnati_School_Safety_Website_31.7.24.pdf

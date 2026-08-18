@@ -1,0 +1,11 @@
+id: hazardous-chemicals
+title: Hazardous Chemicals, its Effects and Antidote
+description: A booklet on hazardous chemicals, their effects and antidotes for onsite and offsite industrial safety.
+format: book
+themes:
+  - drr
+languages:
+  - Gujarati
+badge: Industrial Safety
+order: 46
+url: https://www.unnati.org/pdfs/books/Chem_booklet_LR_WEB.pdf

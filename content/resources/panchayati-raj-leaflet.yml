@@ -1,0 +1,10 @@
+id: panchayati-raj-leaflet
+title: Panchayati Raj Leaflet
+description: Salient features of the Gujarat Panchayati Raj Act.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Panchayati Raj
+order: 72

@@ -1,0 +1,14 @@
+id: evichar
+title: e-VICHAR
+description: Digital editions of the bulletin on COVID-19 response, water and governance.
+format: newsletter
+themes:
+  - clgasa
+  - water
+languages:
+  - English
+  - Hindi
+  - Gujarati
+badge: Digital Edition
+order: 98
+url: https://www.unnati.org/pdfs/Dekh_Parakh.pdf

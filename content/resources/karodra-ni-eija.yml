@@ -1,0 +1,10 @@
+id: karodra-ni-eija
+title: Karodra Ni Eija
+description: Community awareness material from the reconstruction experience.
+format: leaflet
+themes:
+  - drr
+languages:
+  - Gujarati
+badge: Earthquake
+order: 83

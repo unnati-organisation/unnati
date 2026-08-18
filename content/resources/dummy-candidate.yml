@@ -1,0 +1,10 @@
+id: dummy-candidate
+title: Dummy Candidate
+description: Awareness material for free and fair elections.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Hindi
+badge: Elections
+order: 80

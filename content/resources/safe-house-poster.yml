@@ -1,0 +1,12 @@
+id: safe-house-poster
+title: Safe House Poster
+description: Poster on safe construction of houses.
+format: leaflet
+themes:
+  - drr
+languages:
+  - Gujarati
+  - Tamil
+  - Malayalam
+badge: Safe Housing
+order: 88

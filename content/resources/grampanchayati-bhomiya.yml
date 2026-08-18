@@ -1,0 +1,10 @@
+id: grampanchayati-bhomiya
+title: Grampanchayati no Bhomiya
+description: Manual for panchayat representatives in Gujarati.
+format: book
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Panchayati Raj
+order: 35

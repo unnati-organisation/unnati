@@ -1,0 +1,11 @@
+id: shg-flashcard
+title: Self Help Groups Flash Card
+description: Formation and functioning of self help groups.
+format: leaflet
+themes:
+  - other
+  - sie
+languages:
+  - Hindi
+badge: SHGs
+order: 89

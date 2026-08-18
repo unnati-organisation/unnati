@@ -1,0 +1,11 @@
+id: shield-of-safety
+title: The Shield of Safety
+description: A picture book on fire safety.
+format: leaflet
+themes:
+  - drr
+languages:
+  - Gujarati
+  - English
+badge: Fire Safety
+order: 87

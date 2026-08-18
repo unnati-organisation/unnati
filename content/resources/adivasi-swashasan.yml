@@ -1,0 +1,11 @@
+id: adivasi-swashasan
+title: Adivasi Swashasan
+description: A simplified version of the new tribal bill, 1996.
+format: leaflet
+themes:
+  - clgasa
+  - sie
+languages:
+  - Hindi
+badge: Tribal Rights
+order: 77

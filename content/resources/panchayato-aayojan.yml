@@ -1,0 +1,10 @@
+id: panchayato-aayojan
+title: Panchayato Ma Aayojan
+description: Guidelines for preparing budgets by gram panchayats.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Panchayati Raj
+order: 76

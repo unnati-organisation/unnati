@@ -1,0 +1,11 @@
+id: technology-park
+title: Technology Park
+description: Brochure of the disaster-safe construction technology park of Bhachau.
+format: leaflet
+themes:
+  - drr
+languages:
+  - Gujarati
+  - English
+badge: Safe Housing
+order: 86

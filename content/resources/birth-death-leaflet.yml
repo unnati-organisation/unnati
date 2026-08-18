@@ -1,0 +1,11 @@
+id: birth-death-leaflet
+title: Registration of Birth – Death Certificates
+description: The process for registration of birth and death certificates.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: Public Services
+order: 69
+url: https://www.unnati.org/pdfs/birth-death-certificate_11apr2025.pdf

@@ -1,0 +1,11 @@
+id: package-of-practices-agri
+title: Package of Practices — Agriculture
+description: Improved practices for agriculture.
+format: leaflet
+themes:
+  - other
+languages:
+  - Gujarati
+badge: Agriculture
+order: 63
+url: https://www.unnati.org/pdfs/package_of_practices_agriculture.pdf

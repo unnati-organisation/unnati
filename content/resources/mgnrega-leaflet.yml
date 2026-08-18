@@ -1,0 +1,11 @@
+id: mgnrega-leaflet
+title: MGNREGA Pamphlet
+description: The demand for work and how to access it.
+format: leaflet
+themes:
+  - clgasa
+languages:
+  - Gujarati
+badge: MGNREGA
+order: 71
+url: https://www.unnati.org/pdfs/NREGA-Pamphlet-11apr2025.pdf

@@ -1,0 +1,11 @@
+id: fire-poster
+title: Fire Safety Poster
+description: Safety measures to follow during fire.
+format: leaflet
+themes:
+  - drr
+languages:
+  - Gujarati
+  - English
+badge: Fire Safety
+order: 85
