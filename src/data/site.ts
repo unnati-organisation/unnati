@@ -5,6 +5,7 @@ export interface BoardMember {
   role: string;
   address: string;
   image: string;
+  bio?: string;
 }
 
 export interface Office {

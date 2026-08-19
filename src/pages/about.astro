@@ -10,7 +10,12 @@ const boardJsonLd = {
   itemListElement: board.map((m, i) => ({
     "@type": "ListItem",
     position: i + 1,
-    item: { "@type": "Person", name: m.name, jobTitle: m.role },
+    item: {
+      "@type": "Person",
+      name: m.name,
+      jobTitle: m.role,
+      ...(m.bio?.trim() ? { description: m.bio } : {}),
+    },
   })),
 };
 
@@ -208,8 +213,8 @@ const vms = [
       <p class="mt-2 text-muted">Guiding UNNATI's governance and direction.</p>
     </div>
     <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-      {board.map((m) => (
-        <div class="grid aspect-[3/5] grid-rows-[1fr_auto] overflow-hidden rounded-2xl bg-surface-container-low shadow-card ring-1 ring-outline-variant">
+      {board.map((m, i) => (
+        <div class="group relative grid aspect-[3/5] grid-rows-[1fr_auto] overflow-hidden rounded-2xl bg-surface-container-low shadow-card ring-1 ring-outline-variant transition duration-200 ease-in-out hover:-translate-y-1 hover:shadow-pop">
           <div class="relative min-h-0 overflow-hidden">
             <Image
               src={img(m.image)}
@@ -225,9 +230,80 @@ const vms = [
             <h4 class="mb-1 type-title text-on-surface">{m.name}</h4>
             <div class="text-sm font-bold text-secondary-dark">{m.role}</div>
             <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
+            {m.bio?.trim() && <div class="mt-3 text-xs font-semibold text-primary">View bio →</div>}
           </div>
+          {m.bio?.trim() && (
+            <button
+              type="button"
+              class="absolute inset-0 h-full w-full cursor-pointer rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary group-hover:ring-2 group-hover:ring-primary"
+              data-bio-open={`bio-dialog-${i}`}
+              aria-haspopup="dialog"
+              aria-label={`View bio of ${m.name}`}
+            ></button>
+          )}
         </div>
       ))}
     </div>
+
+    {board.map((m, i) =>
+      m.bio?.trim() ? (
+        <dialog
+          id={`bio-dialog-${i}`}
+          class="m-auto w-[min(92vw,36rem)] max-h-[85vh] overflow-y-auto rounded-2xl bg-surface p-0 shadow-pop backdrop:bg-black/60"
+          aria-label={`${m.name} bio`}
+        >
+          <div class="relative flex flex-col sm:flex-row">
+            <button
+              type="button"
+              class="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-surface/85 text-on-surface transition duration-200 ease-in-out hover:bg-surface-container"
+              data-bio-close
+              aria-label="Close bio"
+            >
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+            </button>
+            <div class="relative h-52 w-full shrink-0 overflow-hidden bg-surface-container sm:h-auto sm:w-52">
+              <Image
+                src={img(m.image)}
+                alt={m.name}
+                class="absolute inset-0 h-full w-full object-cover object-top"
+                widths={[320, 480]}
+                sizes="(min-width: 640px) 208px, 100vw"
+                format="webp"
+              />
+            </div>
+            <div class="flex-1 p-6 pr-14 sm:pr-6">
+              <h3 class="text-lg font-bold text-on-surface">{m.name}</h3>
+              <div class="mt-0.5 text-sm font-bold text-secondary-dark">{m.role}</div>
+              <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
+              <div class="mt-3 h-0.5 w-10 rounded bg-primary"></div>
+              <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">{m.bio}</p>
+            </div>
+          </div>
+        </dialog>
+      ) : null,
+    )}
   </section>
 </Layout>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>("[data-bio-open]").forEach((btn) => {
+    const dialog = document.getElementById(btn.dataset.bioOpen ?? "") as HTMLDialogElement | null;
+    if (!dialog) return;
+    btn.addEventListener("click", () => {
+      dialog.showModal();
+      document.body.style.overflow = "hidden";
+    });
+    dialog.addEventListener("close", () => {
+      document.body.style.overflow = "";
+    });
+    dialog.addEventListener("click", (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  });
+
+  document.querySelectorAll<HTMLButtonElement>("[data-bio-close]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      (btn.closest("dialog") as HTMLDialogElement | null)?.close();
+    });
+  });
+</script>

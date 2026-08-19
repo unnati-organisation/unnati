@@ -145,6 +145,7 @@ collections:
               - { label: "Role", name: role, widget: string }
               - { label: "Address", name: address, widget: string }
               - { label: "Image", name: image, widget: image }
+              - { label: "Bio", name: bio, widget: text, required: false }
           - label: "Offices"
             name: offices
             widget: list
