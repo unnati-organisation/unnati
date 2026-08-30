@@ -14,7 +14,7 @@ const boardJsonLd = {
       "@type": "Person",
       name: m.name,
       jobTitle: m.role,
-      ...(m.bio?.trim() ? { description: m.bio } : {}),
+      ...(m.bio?.trim() ? { description: m.bio.replace(/<[^>]*>/g, "") } : {}),
     },
   })),
 };
@@ -276,7 +276,7 @@ const vms = [
               <div class="mt-0.5 text-sm font-bold text-secondary-dark">{m.role}</div>
               <div class="mt-1 text-xs leading-relaxed text-muted">{m.address}</div>
               <div class="mt-3 h-0.5 w-10 rounded bg-primary"></div>
-              <p class="mt-3 text-sm leading-relaxed text-on-surface-variant">{m.bio}</p>
+              <div class="mt-3 text-sm leading-relaxed text-on-surface-variant" set:html={m.bio}></div>
             </div>
           </div>
         </dialog>
