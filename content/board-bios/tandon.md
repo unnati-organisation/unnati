@@ -1,9 +1,0 @@
----
-name: Dr. Rajesh Tandon
----
-
-Dr. Rajesh Tandon is an internationally acclaimed leader and practitioner of participatory research and development. He founded [Participatory Research in Asia (PRIA)](https://www.pria.org/) in 1982 and continues to be its chief functionary.
-
-He is Co-Chair of the UNESCO Chair in Community-Based Research and Social Responsibility in Higher Education along with Professor Budd Hall (University of Victoria, Canada).
-
-Dr Tandon has authored more than 100 articles, a dozen books and numerous training manuals. He was inducted to the International Adult and Continuing Education (IACE) Hall of Fame (class of 2011).

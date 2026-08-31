@@ -7,6 +7,7 @@ export interface BoardMember {
   address: string;
   image: string;
   bio?: string;
+  order?: number;
 }
 
 export interface Office {
@@ -25,32 +26,22 @@ const raw = import.meta.glob<string>("/content/*.yml", {
 });
 
 const data = (raw["/content/site.yml"] ? load(raw["/content/site.yml"]) : {}) as {
-  board?: BoardMember[];
   offices?: Office[];
 };
 
-/* Load board member bios from markdown files in content/board-bios/ */
-const bioFiles = import.meta.glob<string>("/content/board-bios/*.md", {
+/* Load board members from individual YAML files in content/board-members/ */
+const boardFiles = import.meta.glob<string>("/content/board-members/*.yml", {
   query: "?raw",
   import: "default",
   eager: true,
 });
 
-const biosByName: Record<string, string> = {};
-for (const rawMd of Object.values(bioFiles)) {
-  const match = rawMd.match(/^---\nname:\s*(.+)\n---\n([\s\S]*)$/);
-  if (match) {
-    const name = match[1].trim();
-    const body = match[2].trim();
-    if (body) {
-      biosByName[name] = marked.parse(body) as string;
-    }
-  }
-}
-
-export const board: BoardMember[] = (data.board ?? []).map((m) => ({
-  ...m,
-  bio: biosByName[m.name] ?? m.bio,
-}));
+export const board: BoardMember[] = Object.values(boardFiles)
+  .map((raw) => load(raw) as BoardMember)
+  .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+  .map((m) => ({
+    ...m,
+    bio: m.bio?.trim() ? (marked.parse(m.bio) as string) : undefined,
+  }));
 
 export const offices: Office[] = data.offices ?? [];
