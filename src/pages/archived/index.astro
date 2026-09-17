@@ -1,13 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { readFile } from "node:fs/promises";
-import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import archivedData from "../../data/archived-pdfs.json";
 
 const base = import.meta.env.BASE_URL;
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const archivedData = JSON.parse(await readFile(join(__dirname, "../../data/archived-pdfs.json"), "utf8"));
 ---
 
 <Layout title="Archived Documents · UNNATI" description="Archived publications, newsletters, reports and other documents from UNNATI's repository.">
