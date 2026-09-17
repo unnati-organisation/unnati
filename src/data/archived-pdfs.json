@@ -1,0 +1,834 @@
+{
+  "Vichar Bulletins": {
+    "files": [
+      {
+        "name": "Vol.10No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.10No.1H.pdf"
+      },
+      {
+        "name": "Vol.10No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.10No.2H.pdf"
+      },
+      {
+        "name": "Vol.10No1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.10No1G.pdf"
+      },
+      {
+        "name": "Vol.10No2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.10No2G.pdf"
+      },
+      {
+        "name": "Vol.10No3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.10No3G.pdf"
+      },
+      {
+        "name": "Vol.10No4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.10No4G.pdf"
+      },
+      {
+        "name": "Vol.11No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.11No.1G.pdf"
+      },
+      {
+        "name": "Vol.11No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.11No.1H.pdf"
+      },
+      {
+        "name": "Vol.11No.4H.pdf",
+        "path": "pdfs/archived/vichar/Vol.11No.4H.pdf"
+      },
+      {
+        "name": "Vol.11no.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.11no.2H.pdf"
+      },
+      {
+        "name": "Vol.12No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.12No.2H.pdf"
+      },
+      {
+        "name": "Vol.12No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.12No.3G.pdf"
+      },
+      {
+        "name": "Vol.12No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.12No.3H.pdf"
+      },
+      {
+        "name": "Vol.12No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.12No.4G.pdf"
+      },
+      {
+        "name": "Vol.12No.4H.pdf",
+        "path": "pdfs/archived/vichar/Vol.12No.4H.pdf"
+      },
+      {
+        "name": "Vol.13No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.13No.1G.pdf"
+      },
+      {
+        "name": "Vol.13No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.13No.1H.pdf"
+      },
+      {
+        "name": "Vol.13No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.13No.2G.pdf"
+      },
+      {
+        "name": "Vol.13No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.13No.2H.pdf"
+      },
+      {
+        "name": "Vol.13No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.13No.3G.pdf"
+      },
+      {
+        "name": "Vol.13No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.13No.3H.pdf"
+      },
+      {
+        "name": "Vol.15No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.15No.1G.pdf"
+      },
+      {
+        "name": "Vol.15No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.15No.1H.pdf"
+      },
+      {
+        "name": "Vol.15No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.15No.2G.pdf"
+      },
+      {
+        "name": "Vol.15No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.15No.2H.pdf"
+      },
+      {
+        "name": "Vol.15No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.15No.3G.pdf"
+      },
+      {
+        "name": "Vol.15No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.15No.3H.pdf"
+      },
+      {
+        "name": "Vol.16No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.16No.1G.pdf"
+      },
+      {
+        "name": "Vol.16No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.16No.1H.pdf"
+      },
+      {
+        "name": "Vol.16No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.16No.2G.pdf"
+      },
+      {
+        "name": "Vol.16No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.16No.2H.pdf"
+      },
+      {
+        "name": "Vol.16No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.16No.3G.pdf"
+      },
+      {
+        "name": "Vol.16No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.16No.3H.pdf"
+      },
+      {
+        "name": "Vol.17No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.17No.1G.pdf"
+      },
+      {
+        "name": "Vol.17No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.17No.2G.pdf"
+      },
+      {
+        "name": "Vol.17No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.17No.2H.pdf"
+      },
+      {
+        "name": "Vol.17No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.17No.3G.pdf"
+      },
+      {
+        "name": "Vol.17No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.17No.3H.pdf"
+      },
+      {
+        "name": "Vol.18No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.18No.1G.pdf"
+      },
+      {
+        "name": "Vol.18No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.18No.1H.pdf"
+      },
+      {
+        "name": "Vol.18No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.18No.2G.pdf"
+      },
+      {
+        "name": "Vol.18No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.18No.2H.pdf"
+      },
+      {
+        "name": "Vol.18No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.18No.3G.pdf"
+      },
+      {
+        "name": "Vol.18No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.18No.3H.pdf"
+      },
+      {
+        "name": "Vol.19No..2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.19No..2G.pdf"
+      },
+      {
+        "name": "Vol.19No..2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.19No..2H.pdf"
+      },
+      {
+        "name": "Vol.19No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.19No.1G.pdf"
+      },
+      {
+        "name": "Vol.19No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.19No.1H.pdf"
+      },
+      {
+        "name": "Vol.19No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.19No.3G.pdf"
+      },
+      {
+        "name": "Vol.20No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.20No.1G.pdf"
+      },
+      {
+        "name": "Vol.20No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.20No.1H.pdf"
+      },
+      {
+        "name": "Vol.22No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.22No.1G.pdf"
+      },
+      {
+        "name": "Vol.23No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.23No.1G.pdf"
+      },
+      {
+        "name": "Vol.23No.1h.pdf",
+        "path": "pdfs/archived/vichar/Vol.23No.1h.pdf"
+      },
+      {
+        "name": "Vol.3No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.3No.1G.pdf"
+      },
+      {
+        "name": "Vol.3No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.3No.2G.pdf"
+      },
+      {
+        "name": "Vol.3No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.3No.3G.pdf"
+      },
+      {
+        "name": "Vol.3No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.3No.4G.pdf"
+      },
+      {
+        "name": "Vol.4No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.4No.1G.pdf"
+      },
+      {
+        "name": "Vol.4No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.4No.2G.pdf"
+      },
+      {
+        "name": "Vol.4No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.4No.3G.pdf"
+      },
+      {
+        "name": "Vol.4No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.4No.4G.pdf"
+      },
+      {
+        "name": "Vol.5No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.5No.1G.pdf"
+      },
+      {
+        "name": "Vol.5No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.5No.1H.pdf"
+      },
+      {
+        "name": "Vol.5No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.5No.2G.pdf"
+      },
+      {
+        "name": "Vol.5No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.5No.2H.pdf"
+      },
+      {
+        "name": "Vol.5No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.5No.3G.pdf"
+      },
+      {
+        "name": "Vol.5No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.5No.4G.pdf"
+      },
+      {
+        "name": "Vol.6No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.1G.pdf"
+      },
+      {
+        "name": "Vol.6No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.2G.pdf"
+      },
+      {
+        "name": "Vol.6No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.2H.pdf"
+      },
+      {
+        "name": "Vol.6No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.3G.pdf"
+      },
+      {
+        "name": "Vol.6No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.3H.pdf"
+      },
+      {
+        "name": "Vol.6No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.4G.pdf"
+      },
+      {
+        "name": "Vol.6No.4H.pdf",
+        "path": "pdfs/archived/vichar/Vol.6No.4H.pdf"
+      },
+      {
+        "name": "Vol.7No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.1G.pdf"
+      },
+      {
+        "name": "Vol.7No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.1H.pdf"
+      },
+      {
+        "name": "Vol.7No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.2G.pdf"
+      },
+      {
+        "name": "Vol.7No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.2H.pdf"
+      },
+      {
+        "name": "Vol.7No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.3G.pdf"
+      },
+      {
+        "name": "Vol.7No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.3H.pdf"
+      },
+      {
+        "name": "Vol.7No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.4G.pdf"
+      },
+      {
+        "name": "Vol.7No.4H.pdf",
+        "path": "pdfs/archived/vichar/Vol.7No.4H.pdf"
+      },
+      {
+        "name": "Vol.8No.1G.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.1G.pdf"
+      },
+      {
+        "name": "Vol.8No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.1H.pdf"
+      },
+      {
+        "name": "Vol.8No.2G.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.2G.pdf"
+      },
+      {
+        "name": "Vol.8No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.2H.pdf"
+      },
+      {
+        "name": "Vol.8No.3G.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.3G.pdf"
+      },
+      {
+        "name": "Vol.8No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.3H.pdf"
+      },
+      {
+        "name": "Vol.8No.4G.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.4G.pdf"
+      },
+      {
+        "name": "Vol.8No.4H.pdf",
+        "path": "pdfs/archived/vichar/Vol.8No.4H.pdf"
+      },
+      {
+        "name": "Vol.9No.1H.pdf",
+        "path": "pdfs/archived/vichar/Vol.9No.1H.pdf"
+      },
+      {
+        "name": "Vol.9No.2H.pdf",
+        "path": "pdfs/archived/vichar/Vol.9No.2H.pdf"
+      },
+      {
+        "name": "Vol.9No.3H.pdf",
+        "path": "pdfs/archived/vichar/Vol.9No.3H.pdf"
+      },
+      {
+        "name": "Vol.9No.4H.pdf",
+        "path": "pdfs/archived/vichar/Vol.9No.4H.pdf"
+      },
+      {
+        "name": "sajiv-vichar.pdf",
+        "path": "pdfs/archived/vichar/sajiv-vichar.pdf"
+      },
+      {
+        "name": "vichar-guj-22no2.pdf",
+        "path": "pdfs/archived/vichar/vichar-guj-22no2.pdf"
+      },
+      {
+        "name": "vichar-hindi-22no2.pdf",
+        "path": "pdfs/archived/vichar/vichar-hindi-22no2.pdf"
+      },
+      {
+        "name": "vol-20-no-2G.pdf",
+        "path": "pdfs/archived/vichar/vol-20-no-2G.pdf"
+      },
+      {
+        "name": "vol-20-no-2H.pdf",
+        "path": "pdfs/archived/vichar/vol-20-no-2H.pdf"
+      },
+      {
+        "name": "vol-20-no-4.pdf",
+        "path": "pdfs/archived/vichar/vol-20-no-4.pdf"
+      },
+      {
+        "name": "vol-20-no-4h.pdf",
+        "path": "pdfs/archived/vichar/vol-20-no-4h.pdf"
+      },
+      {
+        "name": "vol-21-no-2G.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no-2G.pdf"
+      },
+      {
+        "name": "vol-21-no-2h.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no-2h.pdf"
+      },
+      {
+        "name": "vol-21-no-3.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no-3.pdf"
+      },
+      {
+        "name": "vol-21-no-3h(july).pdf",
+        "path": "pdfs/archived/vichar/vol-21-no-3h(july).pdf"
+      },
+      {
+        "name": "vol-21-no-4g.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no-4g.pdf"
+      },
+      {
+        "name": "vol-21-no-4h.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no-4h.pdf"
+      },
+      {
+        "name": "vol-21-no1g.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no1g.pdf"
+      },
+      {
+        "name": "vol-21-no1h.pdf",
+        "path": "pdfs/archived/vichar/vol-21-no1h.pdf"
+      },
+      {
+        "name": "vol-22-no-1h.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-1h.pdf"
+      },
+      {
+        "name": "vol-22-no-2g.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-2g.pdf"
+      },
+      {
+        "name": "vol-22-no-2h.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-2h.pdf"
+      },
+      {
+        "name": "vol-22-no-3g.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-3g.pdf"
+      },
+      {
+        "name": "vol-22-no-3h.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-3h.pdf"
+      },
+      {
+        "name": "vol-22-no-4g.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-4g.pdf"
+      },
+      {
+        "name": "vol-22-no-4h.pdf",
+        "path": "pdfs/archived/vichar/vol-22-no-4h.pdf"
+      },
+      {
+        "name": "vol-23-no-1g.pdf",
+        "path": "pdfs/archived/vichar/vol-23-no-1g.pdf"
+      },
+      {
+        "name": "vol-23-no-1h.pdf",
+        "path": "pdfs/archived/vichar/vol-23-no-1h.pdf"
+      },
+      {
+        "name": "vol-23-no-4g.pdf",
+        "path": "pdfs/archived/vichar/vol-23-no-4g.pdf"
+      },
+      {
+        "name": "vol-23-no-4h.pdf",
+        "path": "pdfs/archived/vichar/vol-23-no-4h.pdf"
+      },
+      {
+        "name": "vol.10No.4H.pdf",
+        "path": "pdfs/archived/vichar/vol.10No.4H.pdf"
+      },
+      {
+        "name": "vol.11No.4G.pdf",
+        "path": "pdfs/archived/vichar/vol.11No.4G.pdf"
+      },
+      {
+        "name": "vol.11No.4G_Access.pdf",
+        "path": "pdfs/archived/vichar/vol.11No.4G_Access.pdf"
+      },
+      {
+        "name": "vol.11no.2G.pdf",
+        "path": "pdfs/archived/vichar/vol.11no.2G.pdf"
+      },
+      {
+        "name": "vol.11no.3G.pdf",
+        "path": "pdfs/archived/vichar/vol.11no.3G.pdf"
+      },
+      {
+        "name": "vol.11no.3H.pdf",
+        "path": "pdfs/archived/vichar/vol.11no.3H.pdf"
+      },
+      {
+        "name": "vol.12No.1G.pdf",
+        "path": "pdfs/archived/vichar/vol.12No.1G.pdf"
+      },
+      {
+        "name": "vol.12No.1H.pdf",
+        "path": "pdfs/archived/vichar/vol.12No.1H.pdf"
+      },
+      {
+        "name": "vol.14No.1G.pdf",
+        "path": "pdfs/archived/vichar/vol.14No.1G.pdf"
+      },
+      {
+        "name": "vol.14No.1H.pdf",
+        "path": "pdfs/archived/vichar/vol.14No.1H.pdf"
+      },
+      {
+        "name": "vol.14No.2G.pdf",
+        "path": "pdfs/archived/vichar/vol.14No.2G.pdf"
+      },
+      {
+        "name": "vol.14No.2H.pdf",
+        "path": "pdfs/archived/vichar/vol.14No.2H.pdf"
+      },
+      {
+        "name": "vol.14No.3G.pdf",
+        "path": "pdfs/archived/vichar/vol.14No.3G.pdf"
+      },
+      {
+        "name": "vol.19no.3H.pdf",
+        "path": "pdfs/archived/vichar/vol.19no.3H.pdf"
+      },
+      {
+        "name": "vol.21-no-2g.pdf",
+        "path": "pdfs/archived/vichar/vol.21-no-2g.pdf"
+      },
+      {
+        "name": "vol.21-no-2h.pdf",
+        "path": "pdfs/archived/vichar/vol.21-no-2h.pdf"
+      },
+      {
+        "name": "vol.9No.1G.pdf",
+        "path": "pdfs/archived/vichar/vol.9No.1G.pdf"
+      },
+      {
+        "name": "vol.9No.2G.pdf",
+        "path": "pdfs/archived/vichar/vol.9No.2G.pdf"
+      },
+      {
+        "name": "vol.9No.3G.pdf",
+        "path": "pdfs/archived/vichar/vol.9No.3G.pdf"
+      },
+      {
+        "name": "vol.9No.4G.pdf",
+        "path": "pdfs/archived/vichar/vol.9No.4G.pdf"
+      },
+      {
+        "name": "vol10no3H.pdf",
+        "path": "pdfs/archived/vichar/vol10no3H.pdf"
+      }
+    ],
+    "description": "Quarterly newsletters on entitlements, schemes and governance (1998\u20132019)"
+  },
+  "Lokvacha": {
+    "files": [
+      {
+        "name": "april-june-2011.pdf",
+        "path": "pdfs/archived/lokvacha/april-june-2011.pdf"
+      },
+      {
+        "name": "dec-jan-2012.pdf",
+        "path": "pdfs/archived/lokvacha/dec-jan-2012.pdf"
+      },
+      {
+        "name": "feb-april-2012.pdf",
+        "path": "pdfs/archived/lokvacha/feb-april-2012.pdf"
+      },
+      {
+        "name": "jan-march-2013.pdf",
+        "path": "pdfs/archived/lokvacha/jan-march-2013.pdf"
+      },
+      {
+        "name": "january-march-2011.pdf",
+        "path": "pdfs/archived/lokvacha/january-march-2011.pdf"
+      },
+      {
+        "name": "july-sept-2011.pdf",
+        "path": "pdfs/archived/lokvacha/july-sept-2011.pdf"
+      },
+      {
+        "name": "may-july-2012.pdf",
+        "path": "pdfs/archived/lokvacha/may-july-2012.pdf"
+      },
+      {
+        "name": "oct-nov-2011.pdf",
+        "path": "pdfs/archived/lokvacha/oct-nov-2011.pdf"
+      }
+    ],
+    "description": "Quarterly newsletters"
+  },
+  "Nagarvani": {
+    "files": [
+      {
+        "name": "Dholka - Aug 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Dholka - Aug 2005_F.pdf"
+      },
+      {
+        "name": "Dholka - Oct 2005_F-1.pdf",
+        "path": "pdfs/archived/nagarvani/Dholka - Oct 2005_F-1.pdf"
+      },
+      {
+        "name": "Dholka - Oct 2005_F-2.pdf",
+        "path": "pdfs/archived/nagarvani/Dholka - Oct 2005_F-2.pdf"
+      },
+      {
+        "name": "Dholka - Sept 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Dholka - Sept 2005_F.pdf"
+      },
+      {
+        "name": "Khedbrahma - August 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Khedbrahma - August 2005_F.pdf"
+      },
+      {
+        "name": "Khedbrahma - Oct 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Khedbrahma - Oct 2005_F.pdf"
+      },
+      {
+        "name": "Khedbrahma - Sept 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Khedbrahma - Sept 2005_F.pdf"
+      },
+      {
+        "name": "Sanand - Aug 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Sanand - Aug 2005_F.pdf"
+      },
+      {
+        "name": "Sanand - Oct 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Sanand - Oct 2005_F.pdf"
+      },
+      {
+        "name": "Sanand - Sept 2005_F.pdf",
+        "path": "pdfs/archived/nagarvani/Sanand - Sept 2005_F.pdf"
+      }
+    ],
+    "description": "Village newsletters from 2005"
+  },
+  "Covid-19 Response": {
+    "files": [
+      {
+        "name": "Approach_Note_Impact_Assessment-31102020.pdf",
+        "path": "pdfs/archived/covid-response/Approach_Note_Impact_Assessment-31102020.pdf"
+      },
+      {
+        "name": "CSO_Survey_Report_30_June_2021_v2.pdf",
+        "path": "pdfs/archived/covid-response/CSO_Survey_Report_30_June_2021_v2.pdf"
+      },
+      {
+        "name": "June-1-2020-The_response_Support_and_Challenges_in_the_Period_of_Pandemic.pdf",
+        "path": "pdfs/archived/covid-response/June-1-2020-The_response_Support_and_Challenges_in_the_Period_of_Pandemic.pdf"
+      },
+      {
+        "name": "June-3-2020_Guidelines_for_Home_Quarantine_at_GP_level.pdf",
+        "path": "pdfs/archived/covid-response/June-3-2020_Guidelines_for_Home_Quarantine_at_GP_level.pdf"
+      },
+      {
+        "name": "June-3-2020_Guidelines_for_Instituonal_Quarantine_at_GP_level.pdf",
+        "path": "pdfs/archived/covid-response/June-3-2020_Guidelines_for_Instituonal_Quarantine_at_GP_level.pdf"
+      },
+      {
+        "name": "June_30_2020_Policy_Brief_on_Interstate_Migration-(Final).pdf",
+        "path": "pdfs/archived/covid-response/June_30_2020_Policy_Brief_on_Interstate_Migration-(Final).pdf"
+      },
+      {
+        "name": "Lessons-from-COVID-19-and-Lockdown-Development_Prevails-over_Justice_by_Aditi_Sharan_UNNATI.pdf",
+        "path": "pdfs/archived/covid-response/Lessons-from-COVID-19-and-Lockdown-Development_Prevails-over_Justice_by_Aditi_Sharan_UNNATI.pdf"
+      },
+      {
+        "name": "May-15-2020-Health_and_Water_issues_in_Western_Rajasthan.pdf",
+        "path": "pdfs/archived/covid-response/May-15-2020-Health_and_Water_issues_in_Western_Rajasthan.pdf"
+      },
+      {
+        "name": "May-15-2020-Institutional_Quarantine_Centres-Home_Away_From_Home-Joint_Policy_Brief.pdf",
+        "path": "pdfs/archived/covid-response/May-15-2020-Institutional_Quarantine_Centres-Home_Away_From_Home-Joint_Policy_Brief.pdf"
+      },
+      {
+        "name": "May-15-2020-Institutional_Quarantine_Centres_Home_Away_From_Home_Joint_Policy_Brief.pdf",
+        "path": "pdfs/archived/covid-response/May-15-2020-Institutional_Quarantine_Centres_Home_Away_From_Home_Joint_Policy_Brief.pdf"
+      },
+      {
+        "name": "May-25-2020-COVID-19_induced_Lockdown_How_is_the_Hinterland_Coping_Study-by-PRADAN_Engish.pdf",
+        "path": "pdfs/archived/covid-response/May-25-2020-COVID-19_induced_Lockdown_How_is_the_Hinterland_Coping_Study-by-PRADAN_Engish.pdf"
+      },
+      {
+        "name": "May-29-2020-joint_statement_for_the_safe_return_of_the_migrant_workers.pdf",
+        "path": "pdfs/archived/covid-response/May-29-2020-joint_statement_for_the_safe_return_of_the_migrant_workers.pdf"
+      },
+      {
+        "name": "May-30-2020-Guidelines_for_Qurantine.pdf",
+        "path": "pdfs/archived/covid-response/May-30-2020-Guidelines_for_Qurantine.pdf"
+      },
+      {
+        "name": "Situation_Analysis_of_ASHA_AWs_and_Sarpanches_in_COVID-19.pdf",
+        "path": "pdfs/archived/covid-response/Situation_Analysis_of_ASHA_AWs_and_Sarpanches_in_COVID-19.pdf"
+      }
+    ],
+    "description": "Research, policy briefs, and guidelines from the COVID-19 pandemic response"
+  },
+  "Panchayat Jagat": {
+    "files": [
+      {
+        "name": "PJ Year-6 Issue-1.pdf",
+        "path": "pdfs/archived/panchayat-jagat/PJ Year-6 Issue-1.pdf"
+      },
+      {
+        "name": "PJ Year-6 Issue-2.pdf",
+        "path": "pdfs/archived/panchayat-jagat/PJ Year-6 Issue-2.pdf"
+      },
+      {
+        "name": "PJ Year-6 Issue-3.pdf",
+        "path": "pdfs/archived/panchayat-jagat/PJ Year-6 Issue-3.pdf"
+      },
+      {
+        "name": "PJ Year-6 Issue-4.pdf",
+        "path": "pdfs/archived/panchayat-jagat/PJ Year-6 Issue-4.pdf"
+      }
+    ],
+    "description": "Panchayat Jagat newsletters"
+  },
+  "Events": {
+    "files": [
+      {
+        "name": "evaluationreport-sddrr.pdf",
+        "path": "pdfs/archived/events/evaluationreport-sddrr.pdf"
+      }
+    ],
+    "description": "Event reports and evaluations"
+  },
+  "Manuals": {
+    "files": [
+      {
+        "name": "unnatibook.pdf",
+        "path": "pdfs/archived/manuals/unnatibook.pdf"
+      }
+    ],
+    "description": "Training manuals and guides"
+  },
+  "Other Documents": {
+    "files": [
+      {
+        "name": "Knowledge_Democracy_bridging_knowledge_cultures.pdf",
+        "path": "pdfs/archived/Knowledge_Democracy_bridging_knowledge_cultures.pdf"
+      },
+      {
+        "name": "World_Day_to_Combat_Desertification_and_Drought.pdf",
+        "path": "pdfs/archived/World_Day_to_Combat_Desertification_and_Drought.pdf"
+      },
+      {
+        "name": "akhadhana-talab-baap.pdf",
+        "path": "pdfs/archived/akhadhana-talab-baap.pdf"
+      },
+      {
+        "name": "consultation-on-water-management-october-2021.pdf",
+        "path": "pdfs/archived/consultation-on-water-management-october-2021.pdf"
+      },
+      {
+        "name": "eu1.pdf",
+        "path": "pdfs/archived/eu1.pdf"
+      },
+      {
+        "name": "eu2.pdf",
+        "path": "pdfs/archived/eu2.pdf"
+      },
+      {
+        "name": "gadna-gavai-talab-baap.pdf",
+        "path": "pdfs/archived/gadna-gavai-talab-baap.pdf"
+      },
+      {
+        "name": "indira-awaas-yojana-houses.pdf",
+        "path": "pdfs/archived/indira-awaas-yojana-houses.pdf"
+      },
+      {
+        "name": "issues-concerning-commons-baap.pdf",
+        "path": "pdfs/archived/issues-concerning-commons-baap.pdf"
+      },
+      {
+        "name": "meghrajsar-talab-baap.pdf",
+        "path": "pdfs/archived/meghrajsar-talab-baap.pdf"
+      },
+      {
+        "name": "shri-dungergarhvidhata-Jaive-vi.pdf",
+        "path": "pdfs/archived/shri-dungergarhvidhata-Jaive-vi.pdf"
+      },
+      {
+        "name": "snakes-and-ladder-game-on-CPR.pdf",
+        "path": "pdfs/archived/snakes-and-ladder-game-on-CPR.pdf"
+      },
+      {
+        "name": "talabs-of-baap.pdf",
+        "path": "pdfs/archived/talabs-of-baap.pdf"
+      },
+      {
+        "name": "technical-info-on-construction-and-maintenance-baap.pdf",
+        "path": "pdfs/archived/technical-info-on-construction-and-maintenance-baap.pdf"
+      },
+      {
+        "name": "water-and-women-poster.pdf",
+        "path": "pdfs/archived/water-and-women-poster.pdf"
+      },
+      {
+        "name": "water-land-and-agriculture-in-jaisalmer-august-2021.pdf",
+        "path": "pdfs/archived/water-land-and-agriculture-in-jaisalmer-august-2021.pdf"
+      },
+      {
+        "name": "water-poster-2.pdf",
+        "path": "pdfs/archived/water-poster-2.pdf"
+      },
+      {
+        "name": "water-poster.pdf",
+        "path": "pdfs/archived/water-poster.pdf"
+      }
+    ],
+    "description": "Various other documents"
+  }
+}
